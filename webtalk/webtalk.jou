@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Fri Jan 12 11:01:36 2018
+# Process ID: 4092
+# Current directory: H:/workspace_xilinx/tracerSetupExample/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: H:/workspace_xilinx/tracerSetupExample/webtalk/webtalk.log
+# Journal file: H:/workspace_xilinx/tracerSetupExample/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,21 @@
+18:41:25 **** Build of configuration Debug for project tracedemo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM A53 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tracedemo.elf'
+'Invoking: ARM A53 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "tracedemo.elf"  ./src/helloworld.o   
+'Finished building target: tracedemo.elf'
+' '
+'Invoking: ARM A53 Linux Print Size'
+aarch64-linux-gnu-size tracedemo.elf  |tee "tracedemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1139	    576	      8	   1723	    6bb	tracedemo.elf
+'Finished building: tracedemo.elf.size'
+' '
+
+18:41:28 Build Finished (took 2s.589ms)
+

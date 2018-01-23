@@ -1,0 +1,127 @@
+/*
+CoreSight topology detection on Zynq Ultrascale+ MPSoC
+*/
+
+#include "platform.h"
+
+#include "csaccess.h"
+#include "csregistration.h"
+#include "cs_demo_known_boards.h"
+
+#include "cs_topology_detect.h"
+#include "cs_topology_print.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/*
+    Generate topology description for CoreSight
+      --capi        output format: C API calls (default)
+      --dot         output format: dot/graphviz source
+      --dts         output format: Linux device tree fragment
+      --rom <addr>  specify ROM table address
+      --detect      auto-detect ATB topology
+      -o <fn>       output file
+      --help        print this help
+    Set CSAL_BOARD environment variable to override board name
+
+*/
+
+int main(void)
+{
+
+
+    struct cs_devices_t devices;
+    struct board const *board;
+    int o_detect = 1;
+
+    cs_physaddr_t romtable = 0xFE800000;
+    int o_verbose = 1;
+    cs_topology_format_t o_fmt = CS_TOP_DOT;
+	/*
+	 * CS_TOP_STDC     Standard C
+	 * CS_TOP_DTS      Linux device tree source fragment
+	 * CS_TOP_DOT      Dot graph
+	 * CS_TOP_MAX
+	 */
+
+
+    /* platform initialization */
+    init_platform();
+
+
+
+    registration_verbose = o_verbose;
+
+    if (cs_init() < 0) {
+        printf("CSAL initialization failed\n");
+        return EXIT_FAILURE;
+    }
+    if (romtable) {
+        cs_init();
+
+        cs_exclude_range(0xFE9C0000,0xFE9D0FFF); // exclude STM and FTM
+        cs_exclude_range(0xFE9D1000,0xFEBDFFFF); // exclude 'reserved' [from FTM 		to R5-ROM]
+
+        cs_exclude_range(0xFEBE1000,0xFEBEFFFF); // exclude 'reserved' [from R5-ROM 	to R5-0-Debug]
+        cs_exclude_range(0xFEBF0000,0xFEBF2FFF); // exclude 'reserved' [R5-0-Debug],[R5-1-Debug]
+        cs_exclude_range(0xFEBF3000,0xFEBF7FFF); // exclude 'reserved' [from R5-1-Debug to R5-0-CTI]
+
+        cs_exclude_range(0xFEBF8000,0xFEBF8FFF); // exclude 'reserved' [R5-0-CTI]
+        cs_exclude_range(0xFEBF9000,0xFEBF9FFF); // exclude 'reserved' [R5-1-CTI]
+
+        cs_exclude_range(0xFEBFA000,0xFEBFBFFF); // exclude 'reserved' [from R5-1-CTI 	to R5-0-ETM]
+
+        cs_exclude_range(0xFEBFC000,0xFEBFCFFF); // exclude 'reserved' [R5-0-ETM]
+        cs_exclude_range(0xFEBFD000,0xFEBFDFFF); // exclude 'reserved' [R5-1-ETM]
+
+        cs_exclude_range(0xFEBFE000,0xFEBFFFFF); // exclude 'reserved' [from R5-1-ETM 	to A53-ROM]
+
+        cs_exclude_range(0xFEC10000,0xFEC1FFFF); // exclude 'reserved' [A53-0 Debug]
+        cs_exclude_range(0xFED10000,0xFED1FFFF); // exclude 'reserved' [A53-1 Debug]
+        cs_exclude_range(0xFEE10000,0xFEE1FFFF); // exclude 'reserved' [A53-2 Debug]
+        cs_exclude_range(0xFEF10000,0xFEF1FFFF); // exclude 'reserved' [A53-3 Debug]
+
+        //cs_exclude_range(0xFE9C0000,0xFEFFFFFF); // exclude almost everything to get it work for some components --> TBD
+
+        cs_register_romtable(romtable);
+        if (o_verbose) {
+            printf("ROM table scanned\n");
+        }
+    } else {
+        if (setup_known_board(&board, &devices) < 0) {
+            fprintf(stderr, "failed to auto-detect and set up this board\n");
+            cs_shutdown();
+            return EXIT_FAILURE;
+        }
+        if (o_verbose) {
+            printf("board registered\n");
+        }
+    }
+    if (o_detect) {
+        if (o_verbose) {
+            printf("scanning topology...\n");
+        }
+        if (cs_detect_topology(1) < 0) {
+            printf("topology detection failed\n");
+            cs_shutdown();
+            return EXIT_FAILURE;
+        }
+        if (o_verbose) {
+            printf("topology detected\n");
+        }
+    }
+    if (o_verbose) {
+        printf("printing topology...\n");
+    }
+    if (cs_print_topology(stdout, o_fmt) < 0) {
+        printf("failed to print topology\n");
+    }
+    cs_shutdown();
+
+    cleanup_platform();
+
+    return EXIT_SUCCESS;
+}

@@ -1,0 +1,1016 @@
+
+csdemo_r5.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    d  .vectors	00000000 .vectors
+00100000 l    d  .text	00000000 .text
+00125d60 l    d  .init	00000000 .init
+00125d6c l    d  .fini	00000000 .fini
+00125d78 l    d  .rodata	00000000 .rodata
+0012bd40 l    d  .data	00000000 .data
+0012c6b4 l    d  .eh_frame	00000000 .eh_frame
+0012c6b8 l    d  .ARM.exidx	00000000 .ARM.exidx
+0012c6c0 l    d  .init_array	00000000 .init_array
+0012c6c8 l    d  .fini_array	00000000 .fini_array
+0012c6cc l    d  .ARM.attributes	00000000 .ARM.attributes
+0012c6cc l    d  .bss	00000000 .bss
+0012cbdc l    d  .heap	00000000 .heap
+001acbe0 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    df *ABS*	00000000 asm_vectors.o
+001160f8 l       .text	00000000 Undefined
+00116114 l       .text	00000000 SVCHandler
+00116154 l       .text	00000000 PrefetchAbortHandler
+00116138 l       .text	00000000 DataAbortHandler
+001160e8 l       .text	00000000 FIQHandler
+001160ec l       .text	00000000 FIQLoop
+00000000 l    df *ABS*	00000000 boot.o
+ff9a0000 l       *ABS*	00000000 RPU_GLBL_CNTL
+ff9a0020 l       *ABS*	00000000 RPU_ERR_INJ
+ff5e0240 l       *ABS*	00000000 RST_LPD_DBG
+ff5e0200 l       *ABS*	00000000 BOOT_MODE_USER
+00000101 l       *ABS*	00000000 fault_log_enable
+0000003c l       .vectors	00000000 OKToRun
+0000023c l       .vectors	00000000 init
+00000000 l    df *ABS*	00000000 mpu.c
+00000000 l    df *ABS*	00000000 c:/xilinx/sdk/2017.2/gnu/armr5/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-ar/thumb/fpu/crti.o
+00000000 l    df *ABS*	00000000 crtstuff.c
+0012c6b4 l     O .eh_frame	00000000 __EH_FRAME_BEGIN__
+0012c6b0 l     O .data	00000000 __JCR_LIST__
+00100000 l     F .text	00000000 deregister_tm_clones
+00100024 l     F .text	00000000 register_tm_clones
+00100050 l     F .text	00000000 __do_global_dtors_aux
+0012c6cc l       .bss	00000000 completed.6516
+0012c6c8 l     O .fini_array	00000000 __do_global_dtors_aux_fini_array_entry
+00100080 l     F .text	00000000 frame_dummy
+0012c6d0 l       .bss	00000000 object.6521
+0012c6c4 l     O .init_array	00000000 __frame_dummy_init_array_entry
+00000000 l    df *ABS*	00000000 c:/xilinx/sdk/2017.2/gnu/armr5/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-ar/thumb/fpu/crt0.o
+00000000 l    df *ABS*	00000000 cs_access_cmnfns.c
+0012bd44 l     O .data	00000004 wait_iterations
+00126194 l     O .rodata	00000015 __func__.6562
+001261ac l     O .rodata	00000019 __func__.6572
+001261c8 l     O .rodata	00000009 __func__.6577
+001261d4 l     O .rodata	0000000b __func__.6582
+001261e0 l     O .rodata	0000000d __func__.6588
+001261f0 l     O .rodata	0000000f __func__.6594
+00126200 l     O .rodata	0000000d __func__.6617
+0012bd48 l     O .data	00000014 err_msgs.6684
+00126374 l     O .rodata	00000007 __func__.6724
+00000000 l    df *ABS*	00000000 cs_cti_ect.c
+00101868 l     F .text	00000070 cs_cti_get_global_channels
+00126764 l     O .rodata	0000001b __func__.6616
+001018d8 l     F .text	0000006c cs_ect_is_local
+00126780 l     O .rodata	00000010 __func__.6621
+00101944 l     F .text	000000bc cs_channel_uses_cti
+00126790 l     O .rodata	00000014 __func__.6628
+00101a00 l     F .text	00000088 cs_ect_add_cti
+00101a88 l     F .text	00000038 cs_cti_used_global_channels
+00101ac0 l     F .text	00000030 cs_cti_unused_channels
+001267a4 l     O .rodata	0000000e __func__.6646
+001267b4 l     O .rodata	0000000f __func__.6651
+001267c4 l     O .rodata	0000001b __func__.6658
+001267e0 l     O .rodata	0000001c __func__.6665
+001267fc l     O .rodata	0000001b __func__.6671
+00126818 l     O .rodata	00000015 __func__.6678
+00126830 l     O .rodata	00000015 __func__.6690
+00126848 l     O .rodata	0000001a __func__.6696
+00126864 l     O .rodata	0000001c __func__.6702
+00126880 l     O .rodata	00000021 __func__.6708
+001268a4 l     O .rodata	00000015 __func__.6713
+001268bc l     O .rodata	00000016 __func__.6718
+001268d4 l     O .rodata	0000000d __func__.6725
+001268e4 l     O .rodata	0000000f __func__.6776
+001268f4 l     O .rodata	0000000f __func__.6782
+00126904 l     O .rodata	00000017 __func__.6795
+0012691c l     O .rodata	00000017 __func__.6802
+00126934 l     O .rodata	00000013 __func__.6835
+00126948 l     O .rodata	00000011 __func__.6867
+00000000 l    df *ABS*	00000000 cs_debug_halt.c
+00000000 l    df *ABS*	00000000 cs_debug_sample.c
+001037e8 l     F .text	0000010c cs_debug_v8_pc_sample
+00126994 l     O .rodata	00000017 __func__.6537
+00000000 l    df *ABS*	00000000 cs_demo_known_boards.c
+00103a40 l     F .text	00000724 do_registration_zynqus
+00000000 l    df *ABS*	00000000 cs_etm.c
+001273a8 l     O .rodata	0000001b __func__.6571
+001273c4 l     O .rodata	00000010 __func__.6575
+00104558 l     F .text	00000618 edesc
+0012741c l     O .rodata	00000060 fmt.6593
+00104b70 l     F .text	00000390 _cs_etm_config_clean
+0012747c l     O .rodata	00000012 __func__.6663
+00127490 l     O .rodata	00000012 __func__.6695
+001274a4 l     O .rodata	00000016 __func__.6724
+001274bc l     O .rodata	00000015 __func__.6736
+001274d4 l     O .rodata	00000015 __func__.6748
+001274ec l     O .rodata	00000017 __func__.6760
+00127548 l     O .rodata	00000020 tnames.6792
+00127584 l     O .rodata	00000010 msnames.6793
+00000000 l    df *ABS*	00000000 cs_etm_v4.c
+001287c0 l     O .rodata	00000016 __func__.6588
+001287d8 l     O .rodata	00000016 __func__.6622
+001287f0 l     O .rodata	00000018 __func__.6727
+0012bd5c l     O .data	00000010 inst_p0_sz.6724
+0012bd6c l     O .data	00000020 cond_sz.6725
+0012bd8c l     O .data	00000010 qe_sz.6726
+0012c6e8 l       .bss	00000000 sz_buf1.6722
+0012c7e8 l       .bss	00000000 sz_buf2.6723
+0012894c l     O .rodata	00000010 tname.6746
+00128984 l     O .rodata	00000010 ctxttname.6747
+001289b8 l     O .rodata	00000010 dm_name.6748
+001289f0 l     O .rodata	00000010 ds_name.6749
+00000000 l    df *ABS*	00000000 cs_init_manage.c
+00000000 l    df *ABS*	00000000 cs_pmu.c
+00128b0c l     O .rodata	00000012 __func__.6617
+0010bfd4 l     F .text	00000038 cs_pmu_mask
+00128b20 l     O .rodata	00000012 __func__.6629
+00128b34 l     O .rodata	00000013 __func__.6643
+00128b48 l     O .rodata	00000014 __func__.6656
+00128b5c l     O .rodata	0000000d __func__.6667
+00128b6c l     O .rodata	00000012 __func__.6674
+00128b80 l     O .rodata	00000012 __func__.6679
+00000000 l    df *ABS*	00000000 cs_reg_access.c
+00128c1c l     O .rodata	0000000f __func__.6591
+00128c2c l     O .rodata	0000001b __func__.6595
+00000000 l    df *ABS*	00000000 cs_sw_stim.c
+00129084 l     O .rodata	0000001a __func__.6615
+001290a0 l     O .rodata	00000012 __func__.6640
+001290b4 l     O .rodata	0000001f __func__.6649
+001290d4 l     O .rodata	00000015 __func__.6667
+001290ec l     O .rodata	00000015 __func__.6675
+00128f0c l     O .rodata	00000040 s_op_offsets
+00129104 l     O .rodata	00000011 __func__.6688
+00129118 l     O .rodata	00000012 __func__.6700
+0012912c l     O .rodata	00000012 __func__.6706
+00000000 l    df *ABS*	00000000 cs_topology.c
+0010dec0 l     F .text	00000034 raw_read
+0010def4 l     F .text	00000080 cs_addr_is_excluded
+0010df74 l     F .text	000000d8 cs_stm_device_unregister
+001296f0 l     O .rodata	00000019 __func__.6734
+0010e04c l     F .text	000014fc cs_device_or_romtable_register
+0012970c l     O .rodata	0000001f __func__.6745
+0010f5e4 l     F .text	0000018c cs_scan_romtable
+0010f548 l     F .text	0000006c cs_device_find
+0010f5b4 l     F .text	00000030 cs_set_default_power_domain
+0012972c l     O .rodata	00000011 __func__.6797
+0010f770 l     F .text	000000cc _cs_link_affinity
+00129740 l     O .rodata	00000012 __func__.6809
+00129754 l     O .rodata	00000015 __func__.6820
+0012976c l     O .rodata	00000013 __func__.6825
+00129780 l     O .rodata	00000011 __func__.6831
+00129794 l     O .rodata	00000017 __func__.6837
+001297ac l     O .rodata	00000010 __func__.6856
+001297bc l     O .rodata	00000016 __func__.6864
+001297d4 l     O .rodata	0000000f __func__.6878
+00000000 l    df *ABS*	00000000 cs_trace_metadata.c
+001102a0 l     F .text	000000a8 add_to_buf
+00110348 l     F .text	000004a4 cs_get_etm_metadata
+00129b0c l     O .rodata	00000014 __func__.6084
+00000000 l    df *ABS*	00000000 cs_trace_sink.c
+00129f3c l     O .rodata	00000015 __func__.6743
+00129f54 l     O .rodata	0000000e __func__.6750
+00129f64 l     O .rodata	0000000f __func__.6759
+00129f74 l     O .rodata	00000013 __func__.6768
+00129f88 l     O .rodata	0000000f __func__.6774
+00129f98 l     O .rodata	00000010 __func__.6782
+00129fa8 l     O .rodata	00000019 __func__.6795
+00129fc4 l     O .rodata	0000001e __func__.6801
+00129fe4 l     O .rodata	00000016 __func__.6806
+00129ffc l     O .rodata	0000001b __func__.6812
+0012a018 l     O .rodata	00000012 __func__.6828
+0012a02c l     O .rodata	00000016 __func__.6840
+0012a044 l     O .rodata	00000016 __func__.6855
+0012a05c l     O .rodata	00000015 __func__.6868
+00000000 l    df *ABS*	00000000 cs_trace_source.c
+0012a278 l     O .rodata	00000017 __func__.6638
+0012a290 l     O .rodata	00000017 __func__.6645
+0012a2a8 l     O .rodata	00000010 __func__.6651
+0012a2b8 l     O .rodata	00000014 __func__.6657
+0012a2cc l     O .rodata	00000011 __func__.6662
+0012a2e0 l     O .rodata	00000019 __func__.6680
+00000000 l    df *ABS*	00000000 cs_ts_gen.c
+00000000 l    df *ABS*	00000000 cs_util_create_snapshot.c
+0012bd9c l     O .data	00000004 snapshot_trace_start_address
+0012bda0 l     O .data	00000004 snapshot_trace_end_address
+001133e4 l     F .text	00000150 get_core_name
+00113534 l     F .text	000000d8 kernel_virtual_address
+0012c868 l       .bss	00000000 addr.6964
+0011360c l     F .text	000001a4 create_dump_ini
+001137b0 l     F .text	00000114 physical_kernel_code_base_address
+001139c4 l     F .text	00000294 do_fetch_trace_etb
+00000000 l    df *ABS*	00000000 csdemo_etm0_etf4k.c
+0012c86c l       .bss	00000000 devices
+0012c9c4 l       .bss	00000000 cpu_to_trace
+0012c9c8 l       .bss	00000000 itm
+0012c9c9 l       .bss	00000000 itm_only
+0012c9ca l       .bss	00000000 full
+0012c9cb l       .bss	00000000 verbose
+0012c9cc l       .bss	00000000 trace_timestamps
+0012c9cd l       .bss	00000000 trace_cycle_accurate
+0012c9d0 l       .bss	00000000 board_name
+0012cad0 l       .bss	00000000 etb_stop_on_flush
+0012cad4 l       .bss	00000000 etb_post_trig_words
+0012cad8 l       .bss	00000000 return_stack
+0012bda4 l     O .data	00000004 o_trace_start_address
+0012bda8 l     O .data	00000004 o_trace_end_address
+001147cc l     F .text	00000170 do_init_etm
+0012aea8 l     O .rodata	0000000c __func__.7122
+0011493c l     F .text	000000dc show_etm_config
+00114a18 l     F .text	00000198 do_config_etmv4
+00114bb0 l     F .text	000003e8 do_configure_trace
+00114f98 l     F .text	000001d8 cs_etf_flush_and_wait_stop
+00000000 l    df *ABS*	00000000 csregistration.c
+001154c0 l     F .text	000002d8 do_probe_board
+00115798 l     F .text	00000114 do_registration
+001158ac l     F .text	000000a4 initilise_board
+00000000 l    df *ABS*	00000000 getline.c
+00000000 l    df *ABS*	00000000 platform.c
+00000000 l    df *ABS*	00000000 write_uart.c
+00000000 l    df *ABS*	00000000 outbyte.c
+00000000 l    df *ABS*	00000000 usleep.c
+00000000 l    df *ABS*	00000000 xil-crt0.S
+ff9a0108 l       *ABS*	00000000 RPU_0_PWRCTL
+ff9a0208 l       *ABS*	00000000 RPU_1_PWRCTL
+000000ff l       *ABS*	00000000 MPIDR_AFF0
+00000001 l       *ABS*	00000000 PWRCTL_MASK
+00115f38 l       .text	00000000 core1
+00115f3c l       .text	00000000 test_boot_status
+00000000 l    df *ABS*	00000000 xtime_l.c
+00000000 l    df *ABS*	00000000 xuartps_hw.c
+00000000 l    df *ABS*	00000000 cpu_init.o
+00000000 l    df *ABS*	00000000 vectors.c
+00000000 l    df *ABS*	00000000 xil_exception.c
+00116230 l     F .text	00000004 Xil_ExceptionNullHandler
+00000000 l    df *ABS*	00000000 _aeabi_uldivmod.o
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 assert.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 fclose.c
+00000000 l    df *ABS*	00000000 fflush.c
+00000000 l    df *ABS*	00000000 fgetc.c
+00000000 l    df *ABS*	00000000 fgets.c
+00000000 l    df *ABS*	00000000 findfp.c
+00117154 l     F .text	00000004 __fp_unlock
+00117164 l     F .text	000000fe __sinit.part.1
+00117264 l     F .text	00000004 __fp_lock
+00000000 l    df *ABS*	00000000 fini.c
+00000000 l    df *ABS*	00000000 fiprintf.c
+00000000 l    df *ABS*	00000000 fopen.c
+00000000 l    df *ABS*	00000000 fprintf.c
+00000000 l    df *ABS*	00000000 fputc.c
+00000000 l    df *ABS*	00000000 fputs.c
+00000000 l    df *ABS*	00000000 mallocr.c
+00000000 l    df *ABS*	00000000 fscanf.c
+00000000 l    df *ABS*	00000000 fseek.c
+00000000 l    df *ABS*	00000000 fseeko.c
+00000000 l    df *ABS*	00000000 fstatr.c
+00000000 l    df *ABS*	00000000 fvwrite.c
+00000000 l    df *ABS*	00000000 fwalk.c
+00000000 l    df *ABS*	00000000 fwrite.c
+00000000 l    df *ABS*	00000000 getenv.c
+00000000 l    df *ABS*	00000000 getenv_r.c
+00000000 l    df *ABS*	00000000 impure.c
+0012bde8 l     O .data	00000428 impure_data
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 makebuf.c
+00000000 l    df *ABS*	00000000 malloc.c
+00000000 l    df *ABS*	00000000 mallocr.c
+00000000 l    df *ABS*	00000000 memchr-stub.c
+00000000 l    df *ABS*	00000000 lib_a-memcpy.o
+00000000 l    df *ABS*	00000000 memmove.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 mlock.c
+00000000 l    df *ABS*	00000000 openr.c
+00000000 l    df *ABS*	00000000 perror.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 putc.c
+00000000 l    df *ABS*	00000000 putchar.c
+00000000 l    df *ABS*	00000000 puts.c
+00000000 l    df *ABS*	00000000 realloc.c
+00000000 l    df *ABS*	00000000 mallocr.c
+00000000 l    df *ABS*	00000000 reent.c
+00000000 l    df *ABS*	00000000 refill.c
+001190bc l     F .text	00000012 lflush
+00000000 l    df *ABS*	00000000 rget.c
+00000000 l    df *ABS*	00000000 sbrkr.c
+00000000 l    df *ABS*	00000000 snprintf.c
+00000000 l    df *ABS*	00000000 sprintf.c
+00000000 l    df *ABS*	00000000 sscanf.c
+00000000 l    df *ABS*	00000000 stdio.c
+00000000 l    df *ABS*	00000000 lib_a-strcmp.o
+00000000 l    df *ABS*	00000000 strerror.c
+00000000 l    df *ABS*	00000000 strlen-stub.c
+00000000 l    df *ABS*	00000000 strncmp.c
+00000000 l    df *ABS*	00000000 strstr.c
+00119ac0 l     F .text	000000b6 critical_factorization
+00119b78 l     F .text	00000214 two_way_long_needle
+00000000 l    df *ABS*	00000000 strtoul.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+0012b85c l     O .rodata	00000010 blanks.7009
+0012b8b0 l     O .rodata	00000010 zeroes.7010
+00000000 l    df *ABS*	00000000 vfscanf.c
+0012b8c8 l     O .rodata	00000022 basefix.6961
+00000000 l    df *ABS*	00000000 sysclose.c
+00000000 l    df *ABS*	00000000 u_strerr.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+0011c7d0 l     F .text	00000078 __sprint_r.part.0
+0011d6b4 l     F .text	0000006a __sbprintf
+0012b8ec l     O .rodata	00000010 zeroes.6968
+0012b8fc l     O .rodata	00000010 blanks.6967
+00000000 l    df *ABS*	00000000 vfprintf.c
+0011eed4 l     F .text	0000006a __sbprintf
+0012b90c l     O .rodata	00000010 zeroes.7025
+0012b91c l     O .rodata	00000010 blanks.7024
+00000000 l    df *ABS*	00000000 vfscanf.c
+0012b92c l     O .rodata	00000022 basefix.6980
+00000000 l    df *ABS*	00000000 vsnprintf.c
+00000000 l    df *ABS*	00000000 vsprintf.c
+00000000 l    df *ABS*	00000000 wbuf.c
+00000000 l    df *ABS*	00000000 writer.c
+00000000 l    df *ABS*	00000000 wsetup.c
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00120178 l     F .text	00000018 register_fini
+00000000 l    df *ABS*	00000000 abort.c
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 closer.c
+00000000 l    df *ABS*	00000000 ctype_.c
+00000000 l    df *ABS*	00000000 dtoa.c
+001202b4 l     F .text	00000140 quorem
+00000000 l    df *ABS*	00000000 environ.c
+0012cb14 l     O .bss	00000004 initial_env
+00000000 l    df *ABS*	00000000 envlock.c
+00000000 l    df *ABS*	00000000 flags.c
+00000000 l    df *ABS*	00000000 fputwc.c
+00000000 l    df *ABS*	00000000 fread.c
+00000000 l    df *ABS*	00000000 isattyr.c
+00000000 l    df *ABS*	00000000 iswspace.c
+00000000 l    df *ABS*	00000000 locale.c
+0012c62c l     O .data	00000020 lc_message_charset
+0012c64c l     O .data	00000038 lconv
+0012c684 l     O .data	00000020 lc_ctype_charset
+00000000 l    df *ABS*	00000000 lseekr.c
+00000000 l    df *ABS*	00000000 mbrtowc.c
+00000000 l    df *ABS*	00000000 mbtowc_r.c
+00000000 l    df *ABS*	00000000 memcmp.c
+00000000 l    df *ABS*	00000000 mprec.c
+0012ba70 l     O .rodata	0000000c p05.5404
+00000000 l    df *ABS*	00000000 readr.c
+00000000 l    df *ABS*	00000000 s_fpclassify.c
+00000000 l    df *ABS*	00000000 sccl.c
+00000000 l    df *ABS*	00000000 sf_nan.c
+00000000 l    df *ABS*	00000000 signal.c
+00000000 l    df *ABS*	00000000 signalr.c
+00000000 l    df *ABS*	00000000 strchr.c
+00000000 l    df *ABS*	00000000 strtod.c
+001223e8 l     F .text	00000034 sulp
+0012bb98 l     O .rodata	00000014 fpinan.5401
+0012bbac l     O .rodata	00000014 fpi.5365
+0012bbd0 l     O .rodata	00000028 tinytens
+00000000 l    df *ABS*	00000000 strtol.c
+00000000 l    df *ABS*	00000000 strtoll_r.c
+00000000 l    df *ABS*	00000000 strtoull_r.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+0012bbf8 l     O .rodata	00000010 blanks.6953
+0012bc08 l     O .rodata	00000010 zeroes.6954
+00000000 l    df *ABS*	00000000 vfscanf.c
+0012bc18 l     O .rodata	00000022 basefix.6410
+00000000 l    df *ABS*	00000000 ungetc.c
+00000000 l    df *ABS*	00000000 wcrtomb.c
+00000000 l    df *ABS*	00000000 wctomb_r.c
+00000000 l    df *ABS*	00000000 __atexit.c
+00000000 l    df *ABS*	00000000 mallocr.c
+00000000 l    df *ABS*	00000000 gdtoa-gethex.c
+001255d0 l     F .text	000000aa rshift
+00000000 l    df *ABS*	00000000 gdtoa-hexnan.c
+00000000 l    df *ABS*	00000000 _exit.c
+00000000 l    df *ABS*	00000000 _open.c
+00000000 l    df *ABS*	00000000 _sbrk.c
+0012cadc l     O .bss	00000004 heap.4323
+00000000 l    df *ABS*	00000000 close.c
+00000000 l    df *ABS*	00000000 errno.c
+00000000 l    df *ABS*	00000000 fstat.c
+00000000 l    df *ABS*	00000000 getpid.c
+00000000 l    df *ABS*	00000000 isatty.c
+00000000 l    df *ABS*	00000000 kill.c
+00000000 l    df *ABS*	00000000 lseek.c
+00000000 l    df *ABS*	00000000 read.c
+00116778 l     F .text	00000060 _read.localalias.0
+00000000 l    df *ABS*	00000000 write.c
+001167dc l     F .text	00000060 _write.localalias.0
+00000000 l    df *ABS*	00000000 inbyte.c
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00116850 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l       *ABS*	00000000 shift
+00000000 l    df *ABS*	00000000 _divsi3.o
+00116ace l       .text	00000000 .divsi3_skip_div0_test
+00000000 l       *ABS*	00000000 shift
+00000000 l    df *ABS*	00000000 crtstuff.c
+0012c6b4 l     O .eh_frame	00000000 __FRAME_END__
+0012c6b0 l     O .data	00000000 __JCR_END__
+00000000 l    df *ABS*	00000000 c:/xilinx/sdk/2017.2/gnu/armr5/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-ar/thumb/fpu/crtn.o
+00125d58 l     F .text	00000008 ___getpid_from_thumb
+0011020c g     F .text	00000040 cs_device_get
+00106698 g     F .text	00000034 cs_etm_enable_programming
+00118b88 g     F .text	00000012 putchar
+0010c9c8 g     F .text	0000003c cs_device_read
+001038f4 g     F .text	0000014c cs_debug_get_pc_sample
+00121f8c g     F .text	00000028 _mprec_log10
+001bcfe0 g       .stack	00000000 _supervisor_stack_end
+0010976c g     F .text	0000014c _el_desc
+00121ffc g     F .text	00000060 __any_on
+00121464 g     F .text	00000026 _isatty_r
+0012bb70 g     O .rodata	00000028 __mprec_tinytens
+00119014 g     F .text	0000001a cleanup_glue
+001166f8  w    F .text	00000008 _getpid
+00118b9c g     F .text	00000068 _puts_r
+00104210 g     F .text	00000120 _cs_etm_static_config_init
+00121554 g     F .text	0000002c _lseek_r
+00000000 g       .vectors	00000000 _vector_table
+0012c6b8 g       .ARM.exidx	00000000 __eh_framehdr_start
+0010dcdc g     F .text	000001e4 cs_stm_config_put
+001094e8 g     F .text	00000130 _etmv4_edesc
+0012c6b4 g       .data	00000000 ___CTORS_LIST___
+00121134 g     F .text	00000076 __sflags
+00112dc4 g     F .text	000000f0 cs_replicator_set_filter
+00111638 g     F .text	00000068 cs_get_buffer_size_bytes
+00000400 g       *ABS*	00000000 _ABORT_STACK_SIZE
+0011016c g     F .text	000000a0 cs_cpu_get_device
+0010c8e0 g     F .text	0000007c cs_pmu_bus_export
+001222cc g     F .text	0000002a _kill_r
+0011027c g     F .text	00000024 cs_n_devices
+001116a0 g     F .text	000000c8 cs_set_buffer_trigger_counter
+00118a98 g     F .text	0000002a printf
+0011ffb4 g     F .text	0000001a vsprintf
+001253b4 g     F .text	0000005a _wcrtomb_r
+001221a0 g     F .text	0000003a _signal_r
+00101bc8 g     F .text	000000b8 cs_cti_set_trigin_channels
+00119510 g     F .text	00000020 __sseek
+00117338 g     F .text	0000000a __sinit
+001005fc g     F .text	000000bc _cs_get_register_address
+0011ffd0 g     F .text	000000a4 __swbuf_r
+00116238 g     F .text	00000004 Xil_PrefetchAbortHandler
+001214ac g     F .text	00000052 _setlocale_r
+0010cb64 g     F .text	00000058 cs_device_clear
+00117268 g     F .text	0000002e __sfmoreglue
+001132a8 g     F .text	00000070 cs_tsgen_set_freq_id
+001253a0 g     F .text	00000012 ungetc
+00112eb4 g     F .text	000000d0 _ts_read
+00112b78 g     F .text	00000178 cs_trace_enable_timestamps
+001189f4 g     F .text	00000002 __malloc_unlock
+0010ccb0 g     F .text	00000030 cs_device_address
+00112cf0 g     F .text	000000d4 cs_trace_enable_cycle_accurate
+00100214 g     F .text	00000038 cs_device_is_funnel
+00122420 g     F .text	00000e84 _strtod_r
+00111248 g     F .text	000001b4 cs_sink_enable
+001199a8 g     F .text	0000001a strerror
+0010c95c g     F .text	0000006c cs_pmu_is_enabled
+00124670 g     F .text	0000007e _sfread_r
+00115d3c g     F .text	00000018 enable_caches
+00118888 g     F .text	000000c2 memmove
+0010fe80 g     F .text	00000024 cs_device_first
+00117320 g     F .text	00000016 _cleanup
+001bd7e0 g       .stack	00000000 __supervisor_stack
+001192dc g     F .text	0000008c snprintf
+00121718 g     F .text	00000050 _Balloc
+0012c6c0 g       .ARM.exidx	00000000 __exidx_end
+00116028 g     F .text	00000018 XUartPs_SendByte
+00113318 g     F .text	0000007c cs_tsgen_get_freq_id
+0012bdac g     O .data	00000004 registration_verbose
+0012cb48 g     O .bss	00000004 pause_mode
+001bdfe0 g       .stack	00000000 _undef_stack_end
+0010cbbc g     F .text	000000a4 cs_device_wait
+00103054 g     F .text	00000068 cs_ect_get_channel
+0010cd10 g     F .text	00000058 cs_stm_get_ext_ports_size
+0010beb0 g     F .text	00000024 cs_error_count
+001166d0  w    F .text	00000010 __errno
+00116240 g     F .text	00000004 Xil_ExceptionInit
+0010bc78 g     F .text	00000050 cs_diag_set
+00104f00 g     F .text	00000030 cs_etm_static_config_init
+00118008 g     F .text	0000001c getenv
+00104330 g     F .text	0000005c _cs_etm_version
+0012c6cc g       .ARM.attributes	00000000 __sbss_start
+00117b88 g     F .text	0000002a _fstat_r
+001145a0 g     F .text	00000114 await_user_stop
+0012cbd8 g     O .bss	00000004 errno
+0011921c g     F .text	00000010 __srget
+001146b4 g     F .text	00000118 fetch_trace_option
+0011feac g     F .text	0000001a __svfscanf
+0010fe14 g     F .text	00000030 cs_registration_complete
+001194d4 g     F .text	00000004 __seofread
+0011621c g     F .text	00000014 PrefetchAbortInterrupt
+00114404 g     F .text	00000044 set_kernel_trace_dump_range
+00116040 g     F .text	0000001c XUartPs_RecvByte
+00112a38 g     F .text	00000140 cs_trace_disable
+00115e88 g     F .text	00000084 usleep
+001041d0 g     F .text	00000040 setup_known_board_by_name
+0012c6b4 g       .data	00000000 __fixup_start
+0010cab4 g     F .text	00000058 cs_device_write_masked
+001166f0  w    F .text	00000008 getpid
+0010024c g     F .text	00000050 cs_device_is_replicator
+00117830 g     F .text	0000002a fscanf
+0000003c g       .vectors	00000000 _boot
+00117138 g     F .text	0000001a fgets
+001115b8 g     F .text	00000080 cs_disable_tpiu
+00113020 g     F .text	0000006c cs_tsgen_readvalue
+0010d464 g     F .text	000001b8 cs_stm_config_master
+0010083c g     F .text	000000cc _cs_write_wo
+0012c6b4 g       .data	00000000 __fixup_end
+00118b80 g     F .text	00000006 _putchar_r
+00113c58 g     F .text	0000075c do_dump_config
+0010bf6c g     F .text	00000068 cs_pmu_n_counters
+001163c8 g     F .text	000000ec memcpy
+00125bcc g     F .text	0000018a __hexnan
+0012c6b4 g     O .data	00000000 .hidden __TMC_END__
+00117158 g     F .text	0000000c _cleanup_r
+0011a128 g     F .text	00001758 _svfprintf_r
+0011623c g     F .text	00000004 Xil_UndefinedExceptionHandler
+00118a68 g     F .text	00000010 perror
+00130000 g       .ARM.exidx	00000000 __mmu_tbl_start
+0012c6cc g       .ARM.attributes	00000000 __sdata_start
+0012c6b4 g       .data	00000000 __DTOR_END__
+0010934c g     F .text	00000128 _cs_etm_v4_enable_programming
+00104f9c g     F .text	000008d4 cs_etm_config_get
+00116280 g     F .text	00000000 .hidden __aeabi_uldivmod
+00118c04 g     F .text	00000010 puts
+00115d84 g     F .text	00000018 init_platform
+001bdbe0 g       .stack	00000000 __abort_stack
+001215e8 g     F .text	0000006e mbrtowc
+0012c6cc g       .fini_array	00000000 __fini_array_end
+00119538 g     F .text	0000046e _strerror_r
+0012bd3c g       .rodata	00000000 __rodata_end
+00122088 g     F .text	00000056 __fpclassifyd
+0011fec8 g     F .text	00000026 _vfscanf_r
+00121f30 g     F .text	0000005c __ratio
+00118200 g     F .text	00000010 malloc
+00118a78 g     F .text	00000020 _printf_r
+00116850 g     F .text	0000025c .hidden __udivsi3
+00116700  w    F .text	00000008 isatty
+001221dc g     F .text	00000056 _raise_r
+001166e0  w    F .text	00000010 _fstat
+0012148c g     F .text	0000001e iswspace
+0012c6b4 g       .data	00000000 __data1_start
+00116d78 g     F .text	00000046 __assert_func
+0012ba80 g     O .rodata	000000c8 __mprec_tens
+0010f93c g     F .text	00000084 cs_device_register
+0012bd3c g       .data	00000000 __sbss2_end
+00100fb0 g     F .text	000000ec _cs_wait
+00121500 g     F .text	0000000a __locale_charset
+001015ac g     F .text	00000034 _cs_unclaim
+0011ff60 g     F .text	00000020 vsnprintf
+0012cbcc g     O .bss	00000004 UndefinedExceptionAddr
+0011308c g     F .text	00000070 cs_get_global_timestamp
+0012cae8 g     O .bss	00000004 __malloc_top_pad
+001073dc g     F .text	00000f24 _cs_etm_v4_config_get
+00124634 g     F .text	0000003a __ssrefill_r
+001222f8 g     F .text	00000004 _getpid_r
+00100430 g     F .text	000000a0 cs_report_device_error
+0012c6cc g       .bss	00000000 __bss_start__
+0011a10c g     F .text	0000001a strtoul
+0012bd40 g     O .data	00000000 .hidden __dso_handle
+0012c6a4 g     O .data	00000004 __mb_cur_max
+001bcfe0 g       .stack	00000000 __irq_stack
+00121528 g     F .text	0000000a _localeconv_r
+00123604 g     F .text	000001ac _strtoull_r
+00121934 g     F .text	00000012 __i2b
+00117bb4 g     F .text	00000320 __sfvwrite_r
+00122234 g     F .text	00000052 __sigtramp_r
+00115d6c g     F .text	00000018 init_uart
+001162b0 g     F .text	00000112 .hidden __udivmoddi4
+0011922c g     F .text	00000026 _sbrk_r
+0010fbb4 g     F .text	0000003c cs_device_set_power_domain
+001065e8 g     F .text	000000b0 cs_etm_clean
+0010fd80 g     F .text	00000094 cs_atb_add_replicator
+0011617c g       .text	00000000 __cpu_init
+001044f0 g     F .text	00000068 _cs_etm_disable_programming
+0012205c g     F .text	0000002c _read_r
+00101f88 g     F .text	000000bc cs_cti_set_active_channel
+001110c8 g     F .text	000000e4 cs_etf_disable
+0010c238 g     F .text	000002ac cs_pmu_read_status
+00116dec g     F .text	00000084 _fclose_r
+00116ffc g     F .text	00000028 fflush
+0012cae4 g     O .bss	00000004 __malloc_max_sbrked_mem
+0010ff94 g     F .text	00000030 cs_device_get_type
+0011b880 g     F .text	00000f3a __ssvfscanf_r
+00102f30 g     F .text	00000124 cs_trigdst
+00117024 g     F .text	00000032 _fgetc_r
+00000800 g       *ABS*	00000000 _SUPERVISOR_STACK_SIZE
+001acbe0 g       .heap	00000000 _heap_end
+00121da4 g     F .text	000000d0 __b2d
+0012c6b8 g       .ARM.exidx	00000000 __exidx_start
+00116748  w    F .text	00000018 lseek
+00116708  w    F .text	00000008 _isatty
+001161cc g     F .text	00000014 IRQInterrupt
+00104f30 g     F .text	0000006c cs_etm_config_init
+00126a50 g     O .rodata	00000018 known_boards
+0012b150 g     O .rodata	00000004 _global_impure_ptr
+0010d1ec g     F .text	000000e8 cs_trace_swstim_enable_trigger
+00118c28 g     F .text	000003ec _realloc_r
+001180bc g     F .text	00000056 __libc_init_array
+0010db20 g     F .text	000001bc cs_stm_config_get
+0012bd3c g       .data	00000000 __rodata1_start
+0012bc3c g     O .rodata	00000100 __hexdig
+00101af0 g     F .text	0000006c cs_cti_enable
+001011b8 g     F .text	000003c0 _cs_waitbits
+00105870 g     F .text	00000a80 cs_etm_config_put
+001000c4 g     F .text	00000000 _mainCRTStartup
+00121260 g     F .text	00000024 _fputwc_r
+0012e4d2 g       .ARM.attributes	00000000 __ARM.attributes_end
+0012bb48 g     O .rodata	00000028 __mprec_bigtens
+00121804 g     F .text	00000096 __s2b
+001161f4 g     F .text	00000014 SWInterrupt
+00120270 g     F .text	0000000e abort
+00116674  w    F .text	00000018 _open
+0011668c  w    F .text	0000003c _sbrk
+00115f20 g       .text	00000080 _startup
+00101578 g     F .text	00000034 _cs_claim
+00121be8 g     F .text	00000042 __mcmp
+0012c6cc g       .ARM.attributes	00000000 __tbss_start
+00113954 g     F .text	00000070 do_fetch_trace_etb_uart
+0012cb4c g     O .bss	00000080 cpu_id
+0010cfb8 g     F .text	00000074 cs_trace_swstim_get_port_count
+0010f9c0 g     F .text	000000c4 cs_exclude_range
+00117354 g     F .text	00000016 __fp_lock_all
+00125d60 g     F .init	00000000 _init
+00123428 g     F .text	0000001a strtol
+0011789c g     F .text	000002ce _fseeko_r
+00117384 g     F .text	00000032 __libc_fini_array
+00125b98 g     F .text	00000034 __match
+00114448 g     F .text	00000158 pause_demo
+00101844 g     F .text	00000024 io_unmap
+00119030 g     F .text	0000008a _reclaim_reent
+001bdfe0 g       .stack	00000000 __fiq_stack
+0010ffc4 g     F .text	00000030 cs_num_out_ports
+0012189c g     F .text	00000040 __hi0bits
+00116244 g     F .text	00000018 Xil_ExceptionRegisterHandler
+00101704 g     F .text	000000ac _cs_lock
+00108300 g     F .text	00000f8c _cs_etm_v4_config_put
+0012cbe0 g       .heap	00000000 _heap_start
+0010029c g     F .text	00000110 cs_device_type_name
+00000400 g       *ABS*	00000000 _IRQ_STACK_SIZE
+001232a4 g     F .text	00000012 strtod
+0010ca04 g     F .text	00000058 cs_device_write
+0012c6cc g       .ARM.attributes	00000000 __sbss_end
+00000400 g       *ABS*	00000000 _FIQ_STACK_SIZE
+001174f8 g     F .text	00000024 _fputc_r
+0011683c  w    F .text	00000004 write
+0000003c g       .vectors	00000000 _prestart
+00118ac4 g     F .text	00000058 _putc_r
+00102100 g     F .text	00000098 cs_cti_clear_all_active_channels
+0012c628 g     O .data	00000004 environ
+001117dc g     F .text	00000154 cs_get_buffer_unread_bytes
+00100908 g     F .text	000000cc _cs_write64_wo
+001009d4 g     F .text	00000164 _cs_write_traced
+001174cc g     F .text	0000002a fprintf
+001003ac g     F .text	00000084 cs_report_error
+0010109c g     F .text	000000ec _cs_waitnot
+00116710  w    F .text	0000001c kill
+00109618 g     F .text	00000154 _bitnums_as_str
+00121a94 g     F .text	000000a2 __pow5mult
+0012cb1c g     O .bss	00000004 __nlocale_changed
+001be3e0 g       .stack	00000000 __undef_stack
+0010fea4 g     F .text	000000a0 cs_device_next
+0010928c g     F .text	000000c0 _cs_etm_v4_clean
+00115db0 g     F .text	000000c8 write_uchar8
+00116ac8 g     F .text	00000000 .hidden __aeabi_idiv
+001071b0 g     F .text	00000148 _cs_etm_v4_static_config_init
+00110e48 g     F .text	000000f0 cs_tpiu_pattern_test
+00117b6c g     F .text	0000001a fseeko
+0010d2d4 g     F .text	000000e4 cs_trace_swstim_enable_all_ports
+00102c14 g     F .text	000000fc cs_cti_connect_trigsrc
+00117880 g     F .text	0000001a fseek
+00100e98 g     F .text	0000003c _cs_set
+001113fc g     F .text	000001bc cs_sink_disable
+0012cbd0 g     O .bss	00000004 PrefetchAbortAddr
+001072f8 g     F .text	00000080 _cs_etm_v4_config_sel_all
+001130fc g     F .text	00000094 cs_tsgen_set_value
+0012c6b4 g       .data	00000000 __CTOR_LIST__
+00119254 g     F .text	00000086 _snprintf_r
+0012bd3c g       .data	00000000 __sbss2_start
+00112734 g     F .text	00000128 cs_get_trace_source_id
+00117344 g     F .text	00000002 __sfp_lock_acquire
+001187fc g     F .text	0000008a memchr
+00119368 g     F .text	00000044 _sprintf_r
+0012cbdc g       .bss	00000000 __bss_end__
+00100e44 g     F .text	00000054 _cs_set_bit
+00117654 g     F .text	000001dc _free_r
+0012150c g     F .text	0000000c __locale_mb_cur_max
+00120190 g     F .text	000000de __call_exitprocs
+001191e8 g     F .text	00000032 __srget_r
+00110070 g     F .text	00000040 cs_get_dest_inport
+001245a8 g     F .text	0000008c _sungetc_r
+0011285c g     F .text	00000100 cs_trace_enable
+0012cb20 g     O .bss	00000004 __mlocale_changed
+00102278 g     F .text	0000014c cs_cti_reset
+0012c620 g     O .data	00000004 __malloc_sbrk_base
+001000c4 g     F .text	00000000 _start
+00113238 g     F .text	00000070 cs_tsgen_status_is_dbg_halted
+00119d8c g     F .text	00000220 strstr
+00123444 g     F .text	000001be _strtoll_r
+0011c7cc g     F .text	00000004 _user_strerror
+00116760  w    F .text	00000018 _lseek
+00103760 g     F .text	00000088 cs_ect_reset
+00125d78 g       .rodata	00000000 __rodata_start
+0010bf50 g     F .text	0000001c cs_library_version
+00121b38 g     F .text	000000ae __lshift
+00122298 g     F .text	00000012 signal
+001167d8  w    F .text	00000004 read
+001237b0 g     F .text	00000108 __ssprint_r
+001004d0 g     F .text	0000004c cs_get_device_struct
+001189f8 g     F .text	0000002c _open_r
+0010bdf8 g     F .text	000000b8 cs_release
+00102e0c g     F .text	00000124 cs_trigsrc
+0012c6cc g       *ABS*	00000000 _SDA_BASE_
+001254bc g     F .text	000000ae __register_exitproc
+0011211c g     F .text	000001c4 cs_insert_trace_data
+001001dc g     F .text	00000038 cs_device_is_non_mmio
+00101b5c g     F .text	0000006c cs_cti_disable
+00119a20 g     F .text	000000a0 strncmp
+001062f0 g     F .text	000000bc cs_etm_config_init_ex
+001143b4 g     F .text	00000050 do_fetch_trace
+0012c6b4 g       .data	00000000 __data_end
+00115950 g     F .text	000000cc setup_board
+00121948 g     F .text	0000014a __multiply
+0010d61c g     F .text	00000108 cs_stm_select_master
+0012cbe0 g       .heap	00000000 HeapBase
+00100c9c g     F .text	00000134 _cs_set_mask
+00103358 g     F .text	00000408 cs_ect_configure
+0012caec g     O .bss	00000028 __malloc_current_mallinfo
+00100dd0 g     F .text	00000074 _cs_write_mask
+00121e74 g     F .text	000000ba __d2b
+0012cb24 g     O .bss	00000024 G
+0011013c g     F .text	00000030 cs_device_get_affinity
+00100778 g     F .text	000000c4 _cs_read64
+00118c14 g     F .text	00000012 realloc
+0010fa84 g     F .text	00000130 cs_device_set_affinity
+001131cc g     F .text	0000006c cs_tsgen_set_dbg_halt
+00119fac g     F .text	00000160 _strtoul_r
+00104164 g     F .text	0000006c setup_known_board
+0012028c g     F .text	00000026 _close_r
+001161e0 g     F .text	00000014 UndefinedException
+0012cbd4 g     O .bss	00000004 DataAbortAddr
+001216b8 g     F .text	0000005e memcmp
+0010fff4 g     F .text	00000030 cs_num_in_ports
+00102044 g     F .text	000000bc cs_cti_clear_active_channel
+00117f6c g     F .text	00000066 _fwrite_r
+001bcbe0 g       .stack	00000000 _irq_stack_end
+001193fc g     F .text	0000005a sscanf
+001031d4 g     F .text	00000184 cs_ect_diag
+001200b4 g     F .text	000000c2 __swsetup_r
+001163c4  w    F .text	00000002 .hidden __aeabi_ldiv0
+0010fe44 g     F .text	0000003c cs_registration_completed
+00117298 g     F .text	00000086 __sfp
+00121fb4 g     F .text	00000046 __copybits
+0012c214 g     O .data	00000408 __malloc_av_
+00117350 g     F .text	00000002 __sinit_lock_release
+0011295c g     F .text	000000dc cs_trace_is_enabled
+0011fef0 g     F .text	0000006e _vsnprintf_r
+0012c6b8 g       .ARM.exidx	00000000 __eh_framehdr_end
+001194b0 g     F .text	00000022 __sread
+00102d10 g     F .text	000000fc cs_cti_connect_trigdst
+00121444 g     F .text	00000020 fread
+00115e78 g     F .text	00000010 outbyte
+0010051c g     F .text	000000e0 cs_device_new
+00102bec g     F .text	00000028 cs_trigdst_cti
+0010cb0c g     F .text	00000058 cs_device_set
+001066cc g     F .text	00000034 cs_etm_disable_programming
+001017b0 g     F .text	00000094 io_map
+001189f0 g     F .text	00000002 __malloc_lock
+001174ac g     F .text	0000001e _fprintf_r
+0012c6c8 g       .fini_array	00000000 __fini_array_start
+00116fd0 g     F .text	0000002c _fflush_r
+0012556c g     F .text	00000062 _calloc_r
+00113190 g     F .text	0000003c cs_tsgen_enable
+0010cf50 g     F .text	00000068 _cs_stm_config_static_init
+00117498 g     F .text	00000012 fopen
+0011785c g     F .text	0000001e _fscanf_r
+00010000 g       *ABS*	00000000 _STACK_SIZE
+0012c6cc g       .ARM.attributes	00000000 __tdata_start
+0012c6cc g       .ARM.attributes	00000000 __tdata_end
+001098b8 g     F .text	000005ac _sel_desc
+0011894c g     F .text	000000a4 memset
+0010cc60 g     F .text	00000050 cs_device_set_wait_repeats
+00115170 g     F .text	00000350 main
+0012cae0 g     O .bss	00000004 __malloc_max_total_mem
+00080000 g       *ABS*	00000000 _HEAP_SIZE
+0010fbf0 g     F .text	0000014c cs_atb_register
+00120074 g     F .text	00000012 __swbuf
+001212c8 g     F .text	0000017a _fread_r
+0010cde8 g     F .text	000000d4 _cs_swstim_trace_disable
+00116850 g     F .text	00000000 .hidden __aeabi_uidiv
+00119530 g     F .text	00000008 __sclose
+00116e70 g     F .text	00000010 fclose
+001232f0 g     F .text	00000138 _strtol_r
+00118024 g     F .text	00000088 _findenv_r
+0012c6c8 g       .init_array	00000000 __init_array_end
+00101d38 g     F .text	00000080 cs_cti_set_global_channels
+00100f24 g     F .text	0000003c _cs_clear
+00115d54 g     F .text	00000018 disable_caches
+001203f8 g     F .text	00000d34 _dtoa_r
+00118220 g     F .text	000005dc _malloc_r
+001023c4 g     F .text	000006e0 cs_cti_diag
+00125474 g     F .text	00000018 __ascii_wctomb
+001030bc g     F .text	0000008c cs_ect_add_trigsrc
+00125240 g     F .text	0000007a __submore
+001173b8 g     F .text	0000001e _fiprintf_r
+00111930 g     F .text	000003f8 cs_get_trace_data
+001222ac g     F .text	0000000e _init_signal
+00121130 g     F .text	00000002 __env_unlock
+00117ff4 g     F .text	00000012 _findenv
+00117ed4 g     F .text	00000048 _fwalk
+001acbe0 g       .stack	00000000 _stack_end
+00117094 g     F .text	000000a4 _fgets_r
+00121684 g     F .text	00000032 _mbtowc_r
+00102208 g     F .text	00000070 cs_cti_trigout_status
+0012c6b4 g       .data	00000000 ___DTORS_END___
+00118b1c g     F .text	00000062 putc
+00116ac8 g     F .text	00000294 .hidden __divsi3
+00116010 g     F .text	00000004 XTime_SetTime
+0012c6cc g       .ARM.attributes	00000000 __sdata_end
+001175ac g     F .text	000000a8 _malloc_trim_r
+0012bd3c g       .data	00000000 __sdata2_start
+0012c6b4 g       .data	00000000 __CTOR_END__
+0011024c g     F .text	00000030 cs_device_get_MPIDR
+0012c6b4 g       .data	00000000 ___DTORS_LIST___
+0010cce0 g     F .text	00000030 cs_device_part_number
+001164b4 g     F .text	000001ba strcmp
+00111768 g     F .text	00000074 cs_buffer_has_wrapped
+0012c6b4 g       .data	00000000 __DTOR_LIST__
+0011d698 g     F .text	0000001a vfiprintf
+001111ac g     F .text	0000009c cs_sink_is_enabled
+00102aa4 g     F .text	00000090 cs_cti_trigsrc
+00125d6c g     F .fini	00000000 _fini
+0010bbc4 g     F .text	000000b4 cs_init
+00117058 g     F .text	0000003c fgetc
+001193ac g     F .text	0000004e sprintf
+00102198 g     F .text	00000070 cs_cti_trigin_status
+0012cb18 g     O .bss	00000004 _PathLocale
+00101614 g     F .text	00000040 _cs_isunlocked
+00106700 g     F .text	00000030 cs_etm_get_version
+001232b8 g     F .text	00000038 strtof
+001bd7e0 g       .stack	00000000 _abort_stack_end
+00120280 g     F .text	0000000c atexit
+00100138 g     F .text	000000a4 _diagf
+00120088 g     F .text	0000002c _write_r
+0010d724 g     F .text	000003fc cs_stm_ext_write
+0011ff80 g     F .text	00000032 _vsprintf_r
+00121534 g     F .text	00000012 setlocale
+001006b8 g     F .text	000000c0 _cs_read
+0010cd68 g     F .text	00000080 _cs_swstim_trace_enable
+0012215c g     F .text	0000000c nanf
+0012c210 g     O .data	00000004 _impure_ptr
+00116e80 g     F .text	0000014e __sflush_r
+00121580 g     F .text	00000066 _mbrtowc_r
+00102b34 g     F .text	00000090 cs_cti_trigdst
+00121524 g     F .text	00000004 __locale_cjk_lang
+0011787c g     F .text	00000004 _fseek_r
+0012c6c0 g       .init_array	00000000 __preinit_array_end
+00102bc4 g     F .text	00000028 cs_trigsrc_cti
+00100b38 g     F .text	00000164 _cs_write64_traced
+001238b8 g     F .text	00000cee _svfiprintf_r
+001190d0 g     F .text	00000118 __srefill_r
+0012bd3c g       .data	00000000 __sdata2_end
+00121658 g     F .text	0000002a __ascii_mbtowc
+00121d50 g     F .text	00000052 __ulp
+0011736c g     F .text	00000016 __fp_unlock_all
+0011751c g     F .text	0000002a fputc
+00115fa8 g     F .text	00000068 XTime_StartTimer
+00116840 g     F .text	0000000c inbyte
+00101c80 g     F .text	000000b8 cs_cti_set_trigout_channels
+00110024 g     F .text	0000004c cs_get_device_at_outport
+001138c4 g     F .text	00000090 dump_kernel_memory
+0012bdb0 g     O .data	00000038 XExc_VectorTable
+00113394 g     F .text	00000050 cs_tsgen_config_as_ro
+0010ff44 g     F .text	00000050 cs_device_has_class
+001246f0 g     F .text	00000b4e __ssvfiscanf_r
+001107ec g     F .text	0000065c cs_get_trace_metadata
+00121548 g     F .text	0000000a localeconv
+0012c6b4 g       .data	00000000 ___CTORS_END___
+001bcbe0 g       .stack	00000000 __stack
+00116aac g     F .text	0000001a .hidden __aeabi_uidivmod
+00117fd4 g     F .text	00000020 fwrite
+00119458 g     F .text	00000056 _sscanf_r
+001acbe0 g       .heap	00000000 HeapLimit
+0011625c g     F .text	00000024 Xil_ExceptionRemoveHandler
+0010438c g     F .text	00000164 _cs_etm_enable_programming
+001167dc  w    F .text	00000060 _write
+001be3e0 g       .stack	00000000 _end
+0011605c g     F .text	00000054 XUartPs_ResetHw
+0012bd3c g       .data	00000000 __rodata1_end
+00115d9c g     F .text	00000014 cleanup_platform
+001211ac g     F .text	000000b2 __fputwc
+0011fe7c g     F .text	00000030 vfscanf
+00101188 g     F .text	00000030 _cs_set_wait_iterations
+00117548 g     F .text	0000004e _fputs_r
+0012c6b4 g       .data	00000000 __data1_end
+00116208 g     F .text	00000014 DataAbortInterrupt
+001015e0 g     F .text	00000034 _cs_isclaimed
+001194d8 g     F .text	00000038 __swrite
+00110f38 g     F .text	00000190 cs_etf_enable
+0012c61c g     O .data	00000004 __malloc_trim_threshold
+00118a24 g     F .text	00000044 _perror_r
+0012cbe0 g       .heap	00000000 _heap
+00121518 g     F .text	0000000a __locale_msgcharset
+00116dcc g     F .text	00000020 exit
+001173d8 g     F .text	0000002a fiprintf
+00101654 g     F .text	000000b0 _cs_unlock
+0011c85c g     F .text	00000e3a _vfiprintf_r
+00117f1c g     F .text	00000050 _fwalk_reent
+00121c2c g     F .text	00000122 __mdiff
+0010d3b8 g     F .text	000000ac cs_trace_swstim_set_sync_repeat
+00109474 g     F .text	0000004c _cs_etm_v4_disable_programming
+0011672c  w    F .text	0000001c _kill
+0010bed4 g     F .text	0000007c cs_checkpoint
+0012c624 g     O .data	00000004 __ctype_ptr__
+0012c6cc g       .ARM.attributes	00000000 __tbss_end
+00117348 g     F .text	00000002 __sfp_lock_release
+001220e0 g     F .text	0000007c __sccl
+00101db8 g     F .text	00000114 cs_cti_used_channels
+0012b950 g     O .rodata	00000101 _ctype_
+00116778  w    F .text	00000060 _read
+0012c6c0 g       .init_array	00000000 __init_array_start
+001163c4  w    F .text	00000002 .hidden __aeabi_idiv0
+0012c6a8 g     O .data	00000004 __mbtowc
+00115b80 g     F .text	000001bc getline
+001160b0 g       .text	00000000 IRQHandler
+00117404 g     F .text	00000094 _fopen_r
+00116670  w    F .text	00000004 _exit
+00103148 g     F .text	0000008c cs_ect_add_trigdst
+00109e64 g     F .text	00001d60 _cs_etm_v4_config_print
+001063ac g     F .text	000000c0 cs_etm_config_get_ex
+00118114 g     F .text	000000ea __smakebuf_r
+001161b8 g     F .text	00000014 FIQInterrupt
+0010cebc g     F .text	00000094 _cs_swstim_set_trace_id
+001199c4 g     F .text	0000005c strlen
+00101ecc g     F .text	000000bc cs_cti_pulse_channel
+00122168 g     F .text	00000036 _init_signal_r
+001bcbe0 g       .stack	00000000 _stack
+001100b0 g     F .text	0000004c cs_get_device_at_inport
+0012567c g     F .text	0000051a __gethex
+00116dc0 g     F .text	0000000a __assert
+0012c6ac g     O .data	00000004 __wctomb
+001122e0 g     F .text	000002ac _cs_path_enable
+00111fec g     F .text	00000130 cs_clear_trace_buffer
+0011c848 g     F .text	00000014 __sprint_r
+001222fc g     F .text	000000ea strchr
+0011258c g     F .text	000001a8 cs_set_trace_source_id
+00117598 g     F .text	00000012 fputs
+0010646c g     F .text	000000c0 cs_etm_config_put_ex
+0012bd40 g       .data	00000000 __data_start
+0010bcc8 g     F .text	00000130 cs_shutdown
+00111d28 g     F .text	000002c4 cs_empty_trace_buffer
+0012548c g     F .text	00000030 _wctomb_r
+0012112c g     F .text	00000002 __env_lock
+00107378 g     F .text	00000064 _cs_etm_v4_config_init
+0010d02c g     F .text	000001c0 cs_trace_stimulus
+001bdbe0 g       .stack	00000000 _fiq_stack_end
+0010c77c g     F .text	00000164 cs_pmu_reset
+000002c4 g     F .vectors	000001e8 Init_MPU
+0011d720 g     F .text	00001796 _vfprintf_r
+0012c6c0 g       .init_array	00000000 __preinit_array_start
+00115a1c g     F .text	00000164 setup_named_board
+00000400 g       *ABS*	00000000 _UNDEF_STACK_SIZE
+001094c0 g     F .text	00000028 get_etmv4_sc_ptr
+001100fc g     F .text	00000040 cs_get_src_outport
+00106730 g     F .text	00000a80 cs_etm_config_print
+001218dc g     F .text	00000058 __lo0bits
+0011ef40 g     F .text	00000f3a __svfscanf_r
+00116d5c g     F .text	0000001a .hidden __aeabi_idivmod
+001252bc g     F .text	000000e2 _ungetc_r
+0010652c g     F .text	000000bc cs_etm_config_print_ex
+001222bc g     F .text	00000010 __sigtramp
+0012bd3c g       *ABS*	00000000 _SDA2_BASE_
+00116234 g     F .text	00000004 Xil_DataAbortHandler
+00116014 g     F .text	00000014 XTime_GetTime
+0010c00c g     F .text	0000022c cs_pmu_get_counts
+00125410 g     F .text	00000062 wcrtomb
+0011c7bc g     F .text	00000010 close
+00130000 g       .ARM.exidx	00000000 __mmu_tbl_end
+0010c4e4 g     F .text	00000298 cs_pmu_write_status
+0010fd3c g     F .text	00000044 cs_atid_is_valid
+0010f83c g     F .text	00000100 cs_register_romtable
+00100f60 g     F .text	00000050 _cs_isset
+0012c6cc g       .ARM.attributes	00000000 __ARM.attributes_start
+0011eeb8 g     F .text	0000001a vfprintf
+00100ed4 g     F .text	00000050 _cs_set_wo
+00121284 g     F .text	00000042 fputwc
+001166c8  w    F .text	00000008 _close
+00122288 g     F .text	00000010 raise
+0010ca5c g     F .text	00000058 cs_device_write_only
+00118210 g     F .text	00000010 free
+0011734c g     F .text	00000002 __sinit_lock_acquire
+0012177c g     F .text	00000086 __multadd
+00121768 g     F .text	00000012 _Bfree
+001180ac g     F .text	00000010 _getenv_r
+00112f84 g     F .text	0000009c _cs_tsgen_enable
+
+

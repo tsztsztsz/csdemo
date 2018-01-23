@@ -1,0 +1,33 @@
+16:09:14 **** Auto Build of configuration Debug for project CSAL_linux ****
+make all 
+'Building file: ../src/cs_access_cmnfns.c'
+'Invoking: ARM A53 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -I"C:\workspace_xilinx\tracerSetupExample\CSAL_linux\include" -c -fmessage-length=0 -MT"src/cs_access_cmnfns.o" -MMD -MP -MF"src/cs_access_cmnfns.d" -MT"src/cs_access_cmnfns.o" -o "src/cs_access_cmnfns.o" "../src/cs_access_cmnfns.c"
+../src/cs_access_cmnfns.c: In function '_cs_waitbits':
+../src/cs_access_cmnfns.c:390:2: warning: enumeration value 'CS_REG_WAITBITS_END' not handled in switch [-Wswitch]
+  switch (operation) {
+  ^~~~~~
+'Finished building: ../src/cs_access_cmnfns.c'
+' '
+'Building target: CSAL_linux.elf'
+'Invoking: ARM A53 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "CSAL_linux.elf"  ./src/cs_access_cmnfns.o ./src/cs_cti_ect.o ./src/cs_debug_halt.o ./src/cs_debug_sample.o ./src/cs_demo_known_boards.o ./src/cs_etm.o ./src/cs_etm_config_demo.o ./src/cs_etm_v4.o ./src/cs_init_manage.o ./src/cs_pmu.o ./src/cs_reg_access.o ./src/cs_sw_stim.o ./src/cs_topology.o ./src/cs_topology_detect.o ./src/cs_topology_print.o ./src/cs_trace_metadata.o ./src/cs_trace_sink.o ./src/cs_trace_source.o ./src/cs_ts_gen.o ./src/cs_util_create_snapshot.o ./src/csregistration.o ./src/tns.o ./src/tracedemo.o   
+./src/tracedemo.o: In function `main':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/tracedemo.c:578: multiple definition of `main'
+./src/cs_etm_config_demo.o:/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_etm_config_demo.c:115: first defined here
+./src/cs_topology.o: In function `cs_atb_register':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:787: undefined reference to `cs_device_outport_is_valid'
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:788: undefined reference to `cs_device_inport_is_valid'
+./src/cs_topology.o: In function `cs_get_device_at_outport':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:888: undefined reference to `cs_device_outport_is_valid'
+./src/cs_topology.o: In function `cs_get_dest_inport':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:895: undefined reference to `cs_device_outport_is_valid'
+./src/cs_topology.o: In function `cs_get_device_at_inport':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:904: undefined reference to `cs_device_inport_is_valid'
+./src/cs_topology.o: In function `cs_get_src_outport':
+/home/szabo/workspace_vivado/tracerSetupExample/CSAL_linux/Debug/../src/cs_topology.c:911: undefined reference to `cs_device_inport_is_valid'
+collect2.exe: error: ld returned 1 exit status
+make: *** [CSAL_linux.elf] Fehler 1
+
+16:09:20 Build Finished (took 6s.22ms)
+

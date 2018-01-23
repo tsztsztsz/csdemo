@@ -1,0 +1,11 @@
+14:24:55 **** Auto Build of configuration Debug for project tracedemo_linux ****
+make all 
+'Building target: tracedemo_linux.elf'
+'Invoking: ARM A53 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "tracedemo_linux.elf"   
+aarch64-linux-gnu-gcc: fatal error: no input files
+compilation terminated.
+make: *** [tracedemo_linux.elf] Fehler 1
+
+14:24:56 Build Finished (took 281ms)
+

@@ -1,0 +1,21 @@
+14:08:13 **** Auto Build of configuration Debug for project stmexample_us ****
+make all 
+'Building file: ../src/primes.c'
+'Invoking: ARM A53 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/primes.o" -I../../stmexample_us_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/primes.d" -MT"src/primes.o" -o "src/primes.o" "../src/primes.c"
+'Finished building: ../src/primes.c'
+' '
+'Building target: stmexample_us.elf'
+'Invoking: ARM A53 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../stmexample_us_bsp/psu_cortexa53_0/lib -o "stmexample_us.elf"  ./src/cambridge.o ./src/main.o ./src/primes.o ./src/stm.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: stmexample_us.elf'
+' '
+'Invoking: ARM A53 Print Size'
+aarch64-none-elf-size stmexample_us.elf  |tee "stmexample_us.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76300	   8720	 594232	 679252	  a5d54	stmexample_us.elf
+'Finished building: stmexample_us.elf.size'
+' '
+
+14:08:14 Build Finished (took 1s.154ms)
+

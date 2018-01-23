@@ -1,0 +1,90 @@
+/*
+ * app_to_trace.c
+ *
+ *  Created on: 15.01.2018
+ *      Author: ujexq
+ */
+
+
+#include "platform.h"
+
+
+#include <unistd.h>		/* for usleep() */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <errno.h>
+#include <assert.h>
+#include <stdbool.h>
+
+
+int main(int argc, char **argv) {
+
+    init_platform();
+
+
+	printf("Demo application to trace\n");
+
+	pause_demo();
+
+
+	if (setup_known_board_by_name(board_name, &board, &devices) < 0) {
+		return EXIT_FAILURE;
+	}
+
+	pause_demo();
+
+	if (do_configure_trace(board) < 0) {
+		return EXIT_FAILURE;
+	}
+
+
+
+	printf("CSDEMO: trace buffer contents in ETF4K (A53): %u bytes\n", cs_get_buffer_unread_bytes(devices.etf));
+	printf("CSDEMO: trace buffer contents in ETF8K (main): %u bytes\n", cs_get_buffer_unread_bytes(devices.etb));
+
+
+	await_user_stop();
+
+
+	/* Stop collection of trace data by manual flush and stop of formatter.
+	 * This prevents the subsequent tracing of the disable code from overwriting interesting trace.
+	 * Flush will also flush upstream devices such as the ETM/PTMs and STM/ITM */
+	if (etb_stop_on_flush) {
+		cs_etb_flush_and_wait_stop();
+	}
+
+	printf("CSDEMO: Disable trace...\n");
+	/* now shut down all the sources */
+	for (i = 0; i < board->n_cpu; ++i) {
+		cs_trace_disable(devices.ptm[i]);
+	}
+
+
+	cs_sink_disable(devices.etf);
+
+	cs_sink_disable(devices.etb);
+
+	if (devices.itm_etb != NULL) {
+		cs_sink_disable(devices.itm_etb);
+	}
+
+	printf("CSDEMO: trace buffer contents in ETF4K (A53): %u bytes\n", cs_get_buffer_unread_bytes(devices.etf));
+	printf("CSDEMO: trace buffer contents in ETF8K (main): %u bytes\n", cs_get_buffer_unread_bytes(devices.etb));
+
+	pause_demo();
+
+
+
+	do_fetch_trace(&devices, itm);
+	pause_demo();
+
+	printf("CSDEMO: shutdown...\n");
+	cs_shutdown();
+
+    cleanup_platform();
+    return EXIT_SUCCESS;
+}
+
+/* end of tracedemo.c */
