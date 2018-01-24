@@ -67,23 +67,12 @@
 #include <assert.h>
 #include <stdbool.h>
 
-//#ifndef UNIX_USERSPACE
-//#define UNIX_USERSPACE 1
-//#endif				/* UNIX_USERSPACE */
-
-#if UNIX_USERSPACE
-#include <sys/types.h>
-#include <fcntl.h>
-//#include <sys/mman.h>
-#endif				/* UNIX_USERSPACE */
 
 /* Change these to capture the specific region of the kernel required
  KERNEL_TRACE_SIZE          is the extent of the region to trace
  KERNEL_TRACE_VIRTUAL_ADDR  is the virtual address of the start of the region to trace,
  i.e. corresponding to addresses in the vmlinux file
  */
-
-#define KERNEL_TRACE_SIZE 0x7000000//0x700000
 #define ALL_CPUS -1
 
 static struct cs_devices_t devices;
@@ -294,7 +283,8 @@ static int do_configure_trace(const struct board *board) {
 	/*
 	 * Setting Source ID for ETMs, Initialize ETMs (ViewInst, Sync, StartStop Range)
 	 */
-	for (i = 0; i < board->n_cpu; ++i) {
+	//for (i = 0; i < board->n_cpu; ++i) {
+		i=0;
 		printf("CSDEMO: Configuring trace source id for CPU #%d ETM/PTM...\n", i);
 		devices.etm[i] = cs_cpu_get_device(i, CS_DEVCLASS_SOURCE);
 		if (devices.etm[i] == CS_ERRDESC) {
@@ -307,10 +297,10 @@ static int do_configure_trace(const struct board *board) {
 		if (do_init_etm(devices.etm[i]) < 0) {
 			return -1;
 		}
-	}
-	if (itm) {
-		cs_set_trace_source_id(devices.itm, 0x20);
-	}
+	//}
+//	if (itm) {
+//		cs_set_trace_source_id(devices.itm, 0x20);
+//	}
 	/*
 	 * Configure ETMs (VMID, ContextID, Address Range Filter)
 	 */
@@ -327,22 +317,11 @@ static int do_configure_trace(const struct board *board) {
 	cs_checkpoint();
 	/*********************************************************/
 
-	/*********************************************************/
-	/* CORESIGHT SINKS - Enable ETFs and TPIU*/
-	/*********************************************************/
-	/*
-	 * Enable TPIU for continous formatting, enable traceclock from PL
-	 */
-	printf("CSDEMO: Enabling TPIU...\n");
-	if (cs_sink_enable(devices.tpiu) != 0) {
-		printf("CSDEMO: Could not enable trace buffer - not running demo\n");
-		return -1;
-	}
 	/*
 	 *  Enable ETF-main device for use in HW FIFO Mode
 	 */
 	printf("CSDEMO: Enabling ETF-Main in HW FIFO mode...\n");
-	if (cs_etf_enable(devices.etf_main) != 0) {
+	if (cs_sink_enable(devices.etf_main) != 0) {
 		printf("CSDEMO: Could not enable trace buffer - not running demo\n");
 		return -1;
 	}
@@ -384,7 +363,7 @@ static int do_configure_trace(const struct board *board) {
 	/*********************************************************/
 	/* Start ETM[0] */
 	/*********************************************************/
-	cs_trace_enable(devices.etm[0]);
+	cs_trace_enable(devices.etm[0]); // FEC40000
 	cs_checkpoint();
 	/*********************************************************/
 
@@ -531,7 +510,7 @@ int main(int argc, char **argv) {
 	/* dump configuration of current setup [snapshot.ini, trace.ini, device_i.ini, cpu_i.ini, kernel_dump.bin] */
 	/*****************************************************************/
 	set_kernel_trace_dump_range(0x0000000000015a1c, 0x0000000000015b2c);
-	do_dump_config_uart(board, &devices, itm);
+//	do_dump_config_uart(board, &devices, itm);
 
 
 
@@ -561,21 +540,22 @@ int main(int argc, char **argv) {
 
 	printf("CSDEMO: Disable trace...\n");
 	/* now shut down all the sources */
-	for (i = 0; i < board->n_cpu; ++i) {
+	//for (i = 0; i < board->n_cpu; ++i) {
+		i=0;
 		cs_trace_disable(devices.etm[i]);
-	}
+	//}
 
 	cs_sink_disable(devices.etf_a53);
 	cs_sink_disable(devices.etf_main);
-	cs_sink_disable(devices.tpiu);
+//	cs_sink_disable(devices.tpiu);
 	pause_demo();
 
 
 	/*
 	 * Enable fetch of trace data (Output via UART)
 	 */
-//	fetch_trace_option();
-//	do_fetch_trace(&devices, itm);
+	fetch_trace_option();
+	do_fetch_trace_etb_uart(devices.etf_main);
 
 	printf("CSDEMO: shutdown...\n");
 	cs_shutdown();

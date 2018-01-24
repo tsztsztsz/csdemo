@@ -290,10 +290,10 @@ void do_dump_config_uart(const struct board *board, const struct cs_devices_t *d
 #endif
 
 	// kernel dump
-	printf("*******************************************************************\n");
-	printf("**** CSUTIL: Creating (Kernel-) Memory Dump *****\n");
-	printf("*******************************************************************\n");
-	dumped_kernel = !dump_kernel_memory_uart(snapshot_trace_start_address, snapshot_trace_end_address);
+//	printf("*******************************************************************\n");
+//	printf("**** CSUTIL: Creating (Kernel-) Memory Dump *****\n");
+//	printf("*******************************************************************\n");
+//	dumped_kernel = !dump_kernel_memory_uart(snapshot_trace_start_address, snapshot_trace_end_address);
 
 	printf("*******************************************************************\n");
 	printf("**** CSUTIL: Copy following sections for use in DS-5 Debugger: *****\n");
@@ -560,14 +560,12 @@ void do_dump_config(const struct board *board,
 
 void do_fetch_trace(const struct cs_devices_t *devices, int do_dump_swstim)
 {
-	if (devices->etf_a53 != NULL) {
-        do_fetch_trace_etb(devices->etf_a53, "ETF-A53", "cstrace_etf.bin");
-    }
-    /*
+//	if (devices->etf_a53 != NULL) {
+//        do_fetch_trace_etb(devices->etf_a53, "ETF-A53", "cstrace_etf.bin");
+//    }
 	if (devices->etf_main != NULL) {
         do_fetch_trace_etb(devices->etf_main, "core", "cstrace.bin");
     }
-    */
 }
 
 void set_kernel_trace_dump_range(unsigned long start, unsigned long end)

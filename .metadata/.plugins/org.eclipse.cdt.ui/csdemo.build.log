@@ -1,6 +1,6 @@
-10:11:08 **** Incremental Build of configuration Debug for project csdemo ****
+17:44:19 **** Incremental Build of configuration Debug for project csdemo ****
 make all 
 make: Für das Ziel »all« ist nichts zu tun.
 
-10:11:09 Build Finished (took 687ms)
+17:44:19 Build Finished (took 219ms)
 

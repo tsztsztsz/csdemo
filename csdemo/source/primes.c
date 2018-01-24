@@ -9,7 +9,7 @@
 //#include "stm.h"
 #include <stdio.h>
 
-#define TARGET_COUNT (400) //Number of primes to find
+#define TARGET_COUNT (1000) //Number of primes to find
 
 unsigned int target_count = TARGET_COUNT; // Number of primes to find, will equal TARGET_COUNT. Safe to reduce at debug time.
 unsigned int prime_numbers[TARGET_COUNT] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, };
