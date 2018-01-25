@@ -1,3 +1,1017 @@
-10:11:08 **** Incremental Build of configuration Debug for project csdemo ****
+"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexa53_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexa53_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexa53_0/libsrc/usbpsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling usbpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/wdtps_v3_0/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexa53_0/libsrc/wdtps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling wdtps"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexa53_0/libsrc/zdma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+
+18:07:21 Build Finished (took 52s.586ms)
+
+18:07:22 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+18:07:22 Build Finished (took 468ms)
+
+18:07:23 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+18:07:23 **** Clean-only build of configuration Debug for project csdemo_r5 ****
+make clean 
+rm -rf  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o  ./source/cs_access_cmnfns.d ./source/cs_cti_ect.d ./source/cs_debug_halt.d ./source/cs_debug_sample.d ./source/cs_demo_known_boards.d ./source/cs_etm.d ./source/cs_etm_v4.d ./source/cs_init_manage.d ./source/cs_pmu.d ./source/cs_reg_access.d ./source/cs_sw_stim.d ./source/cs_topology.d ./source/cs_trace_metadata.d ./source/cs_trace_sink.d ./source/cs_trace_source.d ./source/cs_ts_gen.d ./source/cs_util_create_snapshot.d ./source/csdemo.d ./source/csregistration.d ./source/getline.d ./source/platform.d ./source/write_uart.d  csdemo_r5.elf.size  csdemo_r5.elf
+ 
+18:07:24 **** Clean-only build of project csdemo_r5_bsp ****
+make -k clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/csudma_v1_1/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/emacps_v3_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/gpiops_v3_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/iicps_v3_5/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ipipsu_v2_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/qspipsu_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/rtcpsu_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/scugic_v3_7/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sdps_v3_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/standalone_v6_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ttcps_v3_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/uartps_v3_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/usbpsu_v1_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/wdtps_v3_0/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s clean 
+rm -f psu_cortexr5_0/lib/libxil.a
+18:07:25 **** Clean-only build of configuration Debug for project csdemo_r5 ****
+make clean 
+rm -rf  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o  ./source/cs_access_cmnfns.d ./source/cs_cti_ect.d ./source/cs_debug_halt.d ./source/cs_debug_sample.d ./source/cs_demo_known_boards.d ./source/cs_etm.d ./source/cs_etm_v4.d ./source/cs_init_manage.d ./source/cs_pmu.d ./source/cs_reg_access.d ./source/cs_sw_stim.d ./source/cs_topology.d ./source/cs_trace_metadata.d ./source/cs_trace_sink.d ./source/cs_trace_source.d ./source/cs_ts_gen.d ./source/cs_util_create_snapshot.d ./source/csdemo.d ./source/csregistration.d ./source/getline.d ./source/platform.d ./source/write_uart.d  csdemo_r5.elf.size  csdemo_r5.elf
+ 
+18:07:26 **** Clean-only build of project csdemo_r5_bsp ****
+make -k clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/csudma_v1_1/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/emacps_v3_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/gpiops_v3_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/iicps_v3_5/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ipipsu_v2_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/qspipsu_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/rtcpsu_v1_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/scugic_v3_7/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sdps_v3_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/standalone_v6_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ttcps_v3_3/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/uartps_v3_4/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/usbpsu_v1_2/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/wdtps_v3_0/src -s clean 
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s clean 
+rm -f psu_cortexr5_0/lib/libxil.a
+18:07:27 **** Build of configuration Debug for project csdemo ****
+make all 
+Building file: ../source/app_to_trace.c
+Invoking: ARM A53 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo\source" -c -fmessage-length=0 -MT"source/app_to_trace.o" -I../../csdemo_bsp/psu_cortexa53_0/include -MMD -MP -MF"source/app_to_trace.d" -MT"source/app_to_trace.o" -o "source/app_to_trace.o" "../source/app_to_trace.c"
+Finished building: ../source/app_to_trace.c
+ 
+Building file: ../source/platform.c
+Invoking: ARM A53 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo\source" -c -fmessage-length=0 -MT"source/platform.o" -I../../csdemo_bsp/psu_cortexa53_0/include -MMD -MP -MF"source/platform.d" -MT"source/platform.o" -o "source/platform.o" "../source/platform.c"
+Finished building: ../source/platform.c
+ 
+Building file: ../source/primes.c
+Invoking: ARM A53 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo\source" -c -fmessage-length=0 -MT"source/primes.o" -I../../csdemo_bsp/psu_cortexa53_0/include -MMD -MP -MF"source/primes.d" -MT"source/primes.o" -o "source/primes.o" "../source/primes.c"
+Finished building: ../source/primes.c
+ 
+Building target: csdemo.elf
+Invoking: ARM A53 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_bsp/psu_cortexa53_0/lib -o "csdemo.elf"  ./source/app_to_trace.o ./source/platform.o ./source/primes.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: csdemo.elf
+ 
+Invoking: ARM A53 Print Size
+aarch64-none-elf-size csdemo.elf  |tee "csdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73628	   6224	 594256	 674108	  a493c	csdemo.elf
+Finished building: csdemo.elf.size
+ 
+18:07:29 **** Build of project csdemo_r5_bsp ****
+make -k all 
+"Running Make include in psu_cortexr5_0/libsrc/axipmon_v6_5/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/canps_v3_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/csudma_v1_1/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/csudma_v1_1/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/emacps_v3_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/gpiops_v3_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/iicps_v3_5/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/ipipsu_v2_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ipipsu_v2_3/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/qspipsu_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/qspipsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/rtcpsu_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/rtcpsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/scugic_v3_7/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/sdps_v3_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/standalone_v6_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/ttcps_v3_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/uartps_v3_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/usbpsu_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/usbpsu_v1_2/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/wdtps_v3_0/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/wdtps_v3_0/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make include in psu_cortexr5_0/libsrc/zdma_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Running Make libs in psu_cortexr5_0/libsrc/axipmon_v6_5/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling axipmon"
+armr5-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexr5_0/libsrc/canps_v3_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling canps"
+"Running Make libs in psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/cpu_cortexr5_v1_3/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling cpu_cortexr5"
+"Running Make libs in psu_cortexr5_0/libsrc/csudma_v1_1/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/csudma_v1_1/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling csudma"
+"Running Make libs in psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexr5_0/libsrc/emacps_v3_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling emacps"
+"Running Make libs in psu_cortexr5_0/libsrc/gpiops_v3_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling gpiops"
+"Running Make libs in psu_cortexr5_0/libsrc/iicps_v3_5/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling iicps"
+"Running Make libs in psu_cortexr5_0/libsrc/ipipsu_v2_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ipipsu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexr5_0/libsrc/qspipsu_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/qspipsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexr5_0/libsrc/rtcpsu_v1_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/rtcpsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexr5_0/libsrc/scugic_v3_7/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^
+"Running Make libs in psu_cortexr5_0/libsrc/sdps_v3_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling sdps"
+"Running Make libs in psu_cortexr5_0/libsrc/standalone_v6_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling standalone R5"
+"Running Make libs in psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/sysmonpsu_v2_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexr5_0/libsrc/ttcps_v3_3/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling ttcps"
+"Running Make libs in psu_cortexr5_0/libsrc/uartps_v3_4/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling uartps"
+"Running Make libs in psu_cortexr5_0/libsrc/usbpsu_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/usbpsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling usbpsu"
+"Running Make libs in psu_cortexr5_0/libsrc/wdtps_v3_0/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/wdtps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling wdtps"
+"Running Make libs in psu_cortexr5_0/libsrc/zdma_v1_2/src"
+C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
+"Compiling zdma"
+'Finished building libraries'
+18:08:15 **** Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/cs_access_cmnfns.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_access_cmnfns.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_access_cmnfns.d" -MT"source/cs_access_cmnfns.o" -o "source/cs_access_cmnfns.o" "../source/cs_access_cmnfns.c"
+../source/cs_access_cmnfns.c: In function '_cs_waitbits':
+../source/cs_access_cmnfns.c:380:2: warning: enumeration value 'CS_REG_WAITBITS_END' not handled in switch [-Wswitch]
+  switch (operation) {
+  ^
+Finished building: ../source/cs_access_cmnfns.c
+ 
+Building file: ../source/cs_cti_ect.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_cti_ect.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_cti_ect.d" -MT"source/cs_cti_ect.o" -o "source/cs_cti_ect.o" "../source/cs_cti_ect.c"
+Finished building: ../source/cs_cti_ect.c
+ 
+Building file: ../source/cs_debug_halt.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_debug_halt.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_debug_halt.d" -MT"source/cs_debug_halt.o" -o "source/cs_debug_halt.o" "../source/cs_debug_halt.c"
+Finished building: ../source/cs_debug_halt.c
+ 
+Building file: ../source/cs_debug_sample.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_debug_sample.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_debug_sample.d" -MT"source/cs_debug_sample.o" -o "source/cs_debug_sample.o" "../source/cs_debug_sample.c"
+../source/cs_debug_sample.c: In function 'cs_debug_v8_pc_sample':
+../source/cs_debug_sample.c:27:26: warning: variable 'regval_h' set but not used [-Wunused-but-set-variable]
+     unsigned int regval, regval_h;
+                          ^
+Finished building: ../source/cs_debug_sample.c
+ 
+Building file: ../source/cs_demo_known_boards.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_demo_known_boards.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_demo_known_boards.d" -MT"source/cs_demo_known_boards.o" -o "source/cs_demo_known_boards.o" "../source/cs_demo_known_boards.c"
+Finished building: ../source/cs_demo_known_boards.c
+ 
+Building file: ../source/cs_etm.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_etm.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_etm.d" -MT"source/cs_etm.o" -o "source/cs_etm.o" "../source/cs_etm.c"
+Finished building: ../source/cs_etm.c
+ 
+Building file: ../source/cs_etm_v4.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_etm_v4.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_etm_v4.d" -MT"source/cs_etm_v4.o" -o "source/cs_etm_v4.o" "../source/cs_etm_v4.c"
+Finished building: ../source/cs_etm_v4.c
+ 
+Building file: ../source/cs_init_manage.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_init_manage.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_init_manage.d" -MT"source/cs_init_manage.o" -o "source/cs_init_manage.o" "../source/cs_init_manage.c"
+../source/cs_init_manage.c: In function 'cs_shutdown':
+../source/cs_init_manage.c:80:9: warning: implicit declaration of function 'close' [-Wimplicit-function-declaration]
+         close(G.mem_fd);
+         ^
+Finished building: ../source/cs_init_manage.c
+ 
+Building file: ../source/cs_pmu.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_pmu.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_pmu.d" -MT"source/cs_pmu.o" -o "source/cs_pmu.o" "../source/cs_pmu.c"
+Finished building: ../source/cs_pmu.c
+ 
+Building file: ../source/cs_reg_access.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_reg_access.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_reg_access.d" -MT"source/cs_reg_access.o" -o "source/cs_reg_access.o" "../source/cs_reg_access.c"
+Finished building: ../source/cs_reg_access.c
+ 
+Building file: ../source/cs_sw_stim.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_sw_stim.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_sw_stim.d" -MT"source/cs_sw_stim.o" -o "source/cs_sw_stim.o" "../source/cs_sw_stim.c"
+Finished building: ../source/cs_sw_stim.c
+ 
+Building file: ../source/cs_topology.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_topology.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_topology.d" -MT"source/cs_topology.o" -o "source/cs_topology.o" "../source/cs_topology.c"
+../source/cs_topology.c: In function 'cs_device_or_romtable_register':
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_UNKNOWN' not handled in switch [-Wswitch]
+             switch (d->type) {
+             ^
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_ETM' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_ITM' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_STM' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_CTI' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_CPU_DEBUG' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_CPU_PMU' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_TS' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_ELA' not handled in switch [-Wswitch]
+../source/cs_topology.c:455:13: warning: enumeration value 'DEV_MAX' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_UNKNOWN' not handled in switch [-Wswitch]
+         switch (d->type) {
+         ^
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_ITM' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_STM' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_FUNNEL' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_REPLICATOR' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_ETF' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_ETB' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_TPIU' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_SWO' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_CTI' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_CPU_DEBUG' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_CPU_PMU' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_TS' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_ELA' not handled in switch [-Wswitch]
+../source/cs_topology.c:564:9: warning: enumeration value 'DEV_MAX' not handled in switch [-Wswitch]
+../source/cs_topology.c: In function '_cs_link_affinity':
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_UNKNOWN' not handled in switch [-Wswitch]
+     switch (other->type) {
+     ^
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_ITM' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_STM' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_FUNNEL' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_REPLICATOR' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_ETF' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_ETB' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_TPIU' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_SWO' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_TS' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_ELA' not handled in switch [-Wswitch]
+../source/cs_topology.c:646:5: warning: enumeration value 'DEV_MAX' not handled in switch [-Wswitch]
+Finished building: ../source/cs_topology.c
+ 
+Building file: ../source/cs_trace_metadata.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_trace_metadata.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_trace_metadata.d" -MT"source/cs_trace_metadata.o" -o "source/cs_trace_metadata.o" "../source/cs_trace_metadata.c"
+Finished building: ../source/cs_trace_metadata.c
+ 
+Building file: ../source/cs_trace_sink.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_trace_sink.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_trace_sink.d" -MT"source/cs_trace_sink.o" -o "source/cs_trace_sink.o" "../source/cs_trace_sink.c"
+Finished building: ../source/cs_trace_sink.c
+ 
+Building file: ../source/cs_trace_source.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_trace_source.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_trace_source.d" -MT"source/cs_trace_source.o" -o "source/cs_trace_source.o" "../source/cs_trace_source.c"
+Finished building: ../source/cs_trace_source.c
+ 
+Building file: ../source/cs_ts_gen.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_ts_gen.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_ts_gen.d" -MT"source/cs_ts_gen.o" -o "source/cs_ts_gen.o" "../source/cs_ts_gen.c"
+Finished building: ../source/cs_ts_gen.c
+ 
+Building file: ../source/cs_util_create_snapshot.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/cs_util_create_snapshot.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/cs_util_create_snapshot.d" -MT"source/cs_util_create_snapshot.o" -o "source/cs_util_create_snapshot.o" "../source/cs_util_create_snapshot.c"
+../source/cs_util_create_snapshot.c: In function 'dump_kernel_memory_uart':
+../source/cs_util_create_snapshot.c:191:12: warning: passing argument 2 of 'write' makes pointer from integer without a cast [-Wint-conversion]
+   write(0, *local, size);
+            ^
+In file included from c:\xilinx\sdk\2017.2\gnu\armr5\nt\gcc-arm-none-eabi\arm-none-eabi\include\sys\types.h:20:0,
+                 from c:\xilinx\sdk\2017.2\gnu\armr5\nt\gcc-arm-none-eabi\arm-none-eabi\include\sched.h:23,
+                 from ../source/cs_util_create_snapshot.c:26:
+c:\xilinx\sdk\2017.2\gnu\armr5\nt\gcc-arm-none-eabi\arm-none-eabi\include\sys\unistd.h:200:25: note: expected 'const void *' but argument is of type 'unsigned char'
+ _READ_WRITE_RETURN_TYPE _EXFUN(write, (int __fd, const void *__buf, size_t __nbyte ));
+                         ^
+../source/cs_util_create_snapshot.c:182:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+../source/cs_util_create_snapshot.c: In function 'do_dump_config_uart':
+../source/cs_util_create_snapshot.c:280:6: warning: unused variable 'separate_itm_buffer' [-Wunused-variable]
+  int separate_itm_buffer;
+      ^
+../source/cs_util_create_snapshot.c:279:6: warning: variable 'dumped_kernel' set but not used [-Wunused-but-set-variable]
+  int dumped_kernel;
+      ^
+../source/cs_util_create_snapshot.c: At top level:
+../source/cs_util_create_snapshot.c:77:22: warning: 'kernel_virtual_address' defined but not used [-Wunused-function]
+ static unsigned long kernel_virtual_address(void)
+                      ^
+../source/cs_util_create_snapshot.c:125:22: warning: 'physical_kernel_code_base_address' defined but not used [-Wunused-function]
+ static unsigned long physical_kernel_code_base_address(void)
+                      ^
+Finished building: ../source/cs_util_create_snapshot.c
+ 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:158:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:243:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:246:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:202:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building file: ../source/csregistration.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csregistration.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csregistration.d" -MT"source/csregistration.o" -o "source/csregistration.o" "../source/csregistration.c"
+../source/csregistration.c: In function 'do_probe_board':
+../source/csregistration.c:53:19: warning: implicit declaration of function 'getline' [-Wimplicit-function-declaration]
+     while ((len = getline(&line, &size, fl)) >= 0) {
+                   ^
+Finished building: ../source/csregistration.c
+ 
+Building file: ../source/getline.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/getline.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/getline.d" -MT"source/getline.o" -o "source/getline.o" "../source/getline.c"
+Finished building: ../source/getline.c
+ 
+Building file: ../source/platform.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/platform.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/platform.d" -MT"source/platform.o" -o "source/platform.o" "../source/platform.c"
+Finished building: ../source/platform.c
+ 
+Building file: ../source/write_uart.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/write_uart.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/write_uart.d" -MT"source/write_uart.o" -o "source/write_uart.o" "../source/write_uart.c"
+Finished building: ../source/write_uart.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+18:08:24 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+18:08:25 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:12:31 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:158:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:243:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:246:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:202:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183692	   2432	 597276	 783400	  bf428	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:12:54 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:158:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:243:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:246:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:202:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183692	   2432	 597276	 783400	  bf428	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:13:05 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:158:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:243:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:246:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:202:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183692	   2432	 597276	 783400	  bf428	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:13:13 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:158:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:243:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:246:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:202:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183692	   2432	 597276	 783400	  bf428	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:13:57 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c:101:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'static'
+ static char board_name[BOARD_NAME_LEN];
+ ^
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: In function 'main':
+../source/csdemo.c:465:9: error: 'board_name' undeclared (first use in this function)
+  strcpy(board_name,"Xilinx Zynq Ultrascale+ MPSoC");
+         ^
+../source/csdemo.c:465:9: note: each undeclared identifier is reported only once for each function it appears in
+../source/csdemo.c:481:2: error: 'run_tpiu_pattern_test' undeclared (first use in this function)
+  run_tpiu_pattern_test = 1;
+  ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+make: *** [source/csdemo.o] Fehler 1
+10:14:02 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:14:06 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:160:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:245:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:248:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:92:12: warning: 'cpu_to_trace' defined but not used [-Wunused-variable]
+ static int cpu_to_trace;
+            ^
+../source/csdemo.c:204:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:14:36 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:15:17 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:15:18 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:16:55 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:17:09 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:17:25 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183708	   2432	 597276	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:17:56 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:17:56 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:20:21 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:20:22 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:24:56 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183700	   2432	 597284	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:25:05 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:25:05 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:29:09 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:29:10 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:37:49 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183700	   2432	 597284	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+10:38:14 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+10:38:14 **** Incremental Build of configuration Debug for project csdemo_r5 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+11:33:02 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183700	   2432	 597284	 783416	  bf438	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+11:38:16 **** Auto Build of configuration Debug for project csdemo_r5 ****
+make all 
+Building file: ../source/csdemo.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\include" -I"H:\workspace_xilinx\tracerSetupExample\csdemo_r5\source" -c -fmessage-length=0 -MT"source/csdemo.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I../../csdemo_r5_bsp/psu_cortexr5_0/include -MMD -MP -MF"source/csdemo.d" -MT"source/csdemo.o" -o "source/csdemo.o" "../source/csdemo.c"
+../source/csdemo.c: In function 'do_init_etm':
+../source/csdemo.c:159:23: warning: unused variable 'config' [-Wunused-variable]
+  struct cs_etm_config config;
+                       ^
+../source/csdemo.c: In function 'do_config_etmv4':
+../source/csdemo.c:244:57: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[0].acvr_h = (o_trace_start_address >> 32) & 0xFFFFFFFF;
+                                                         ^
+../source/csdemo.c:247:55: warning: right shift count >= width of type [-Wshift-count-overflow]
+   tconfig.addr_comps[1].acvr_h = (o_trace_end_address >> 32) & 0xFFFFFFFF;
+                                                       ^
+../source/csdemo.c: At top level:
+../source/csdemo.c:203:13: warning: 'show_etm_config' defined but not used [-Wunused-function]
+ static void show_etm_config(unsigned int n) {
+             ^
+Finished building: ../source/csdemo.c
+ 
+Building target: csdemo_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -Wl,-T -Wl,../source/lscript.ld -L../../csdemo_r5_bsp/psu_cortexr5_0/lib -o "csdemo_r5.elf"  ./source/cs_access_cmnfns.o ./source/cs_cti_ect.o ./source/cs_debug_halt.o ./source/cs_debug_sample.o ./source/cs_demo_known_boards.o ./source/cs_etm.o ./source/cs_etm_v4.o ./source/cs_init_manage.o ./source/cs_pmu.o ./source/cs_reg_access.o ./source/cs_sw_stim.o ./source/cs_topology.o ./source/cs_trace_metadata.o ./source/cs_trace_sink.o ./source/cs_trace_source.o ./source/cs_ts_gen.o ./source/cs_util_create_snapshot.o ./source/csdemo.o ./source/csregistration.o ./source/getline.o ./source/platform.o ./source/write_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16
+Finished building target: csdemo_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size csdemo_r5.elf  |tee "csdemo_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183580	   2432	 597276	 783288	  bf3b8	csdemo_r5.elf
+Finished building: csdemo_r5.elf.size
+ 
+11:38:34 **** Incremental Build of configuration Debug for project csdemo ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+11:38:34 **** Incremental Build of configuration Debug for project csdemo_r5 ****
 make all 
 make: Für das Ziel »all« ist nichts zu tun.

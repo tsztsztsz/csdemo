@@ -89,13 +89,14 @@
 static struct cs_devices_t devices;
 
 /* command line options */
-static int cpu_to_trace;
 static bool itm;
 static bool itm_only;
 static bool full;
 static bool verbose;
 static bool trace_timestamps;
 static bool trace_cycle_accurate;
+static bool run_tpiu_pattern_test;
+
 #define BOARD_NAME_LEN 256
 static char board_name[BOARD_NAME_LEN];
 
@@ -252,7 +253,7 @@ static int do_config_etmv4(int n_core) {
 
 		/* finally, set up ViewInst to trace according to the resources we have set up */
 		tconfig.viiectlr = 0x1; /* program the address comp pair 0 for include */
-		tconfig.syncpr = 0x0; /* no extra sync */
+		tconfig.syncpr = 0xC; /* no extra sync */
 
 	}
 	cs_etm_config_print_ex(etm, &tconfig);
@@ -294,8 +295,9 @@ static int do_configure_trace(const struct board *board) {
 	/*
 	 * Setting Source ID for ETMs, Initialize ETMs (ViewInst, Sync, StartStop Range)
 	 */
-	for (i = 0; i < board->n_cpu; ++i) {
-		printf("CSDEMO: Configuring trace source id for CPU #%d ETM/PTM...\n", i);
+//	for (i = 0; i < board->n_cpu; ++i) {
+	i=0;
+	printf("CSDEMO: Configuring trace source id for CPU #%d ETM/PTM...\n", i);
 		devices.etm[i] = cs_cpu_get_device(i, CS_DEVCLASS_SOURCE);
 		if (devices.etm[i] == CS_ERRDESC) {
 			fprintf(stderr, "** Failed to get trace source for CPU #%d\n", i);
@@ -307,10 +309,10 @@ static int do_configure_trace(const struct board *board) {
 		if (do_init_etm(devices.etm[i]) < 0) {
 			return -1;
 		}
-	}
-	if (itm) {
-		cs_set_trace_source_id(devices.itm, 0x20);
-	}
+	//}
+//	if (itm) {
+//		cs_set_trace_source_id(devices.itm, 0x20);
+//	}
 	/*
 	 * Configure ETMs (VMID, ContextID, Address Range Filter)
 	 */
@@ -466,10 +468,9 @@ int main(int argc, char **argv) {
 	/*
 	 * Trace Configuration
 	 */
-	cpu_to_trace = 0;        //ALL_CPUS;	// no CPU affinity selected (yet), trace all CPUs
 	itm = false;
 	itm_only = false;
-	full = false; 			 // false: enable address range filter, true: enable filtering
+	full = false; 			 // false: enable address range filter, true: no filtering
 	etb_stop_on_flush = 1;
 	etb_post_trig_words = 0;
 	trace_timestamps = false;
@@ -478,10 +479,10 @@ int main(int argc, char **argv) {
 	cs_diag_set(1);
 	verbose = true;
 	pause_mode = 0;
-
+	run_tpiu_pattern_test = false;
 	if(!full) {
-		o_trace_start_address = 0x0000000000015a1c;
-		o_trace_end_address = 0x0000000000015b2c;
+		o_trace_start_address = 0x000000000001030;
+		o_trace_end_address = 0x000000000001144;
 	}
 
 	const struct board *board;
@@ -500,7 +501,6 @@ int main(int argc, char **argv) {
 	/*****************************************************************/
 	/* Registration of CoreSight Devices in local memory */
 	/*****************************************************************/
-	bool run_tpiu_pattern_test = false;
 	if(run_tpiu_pattern_test) {
 		printf("*****************************\n");
 		printf("CSDEMO: Run TPIU pattern test\n");
@@ -530,8 +530,8 @@ int main(int argc, char **argv) {
 	/*****************************************************************/
 	/* dump configuration of current setup [snapshot.ini, trace.ini, device_i.ini, cpu_i.ini, kernel_dump.bin] */
 	/*****************************************************************/
-	set_kernel_trace_dump_range(0x0000000000015a1c, 0x0000000000015b2c);
-	do_dump_config_uart(board, &devices, itm);
+//	set_kernel_trace_dump_range(0x0000000000015a1c, 0x0000000000015b2c);
+//	do_dump_config_uart(board, &devices, itm);
 
 
 
@@ -561,9 +561,10 @@ int main(int argc, char **argv) {
 
 	printf("CSDEMO: Disable trace...\n");
 	/* now shut down all the sources */
-	for (i = 0; i < board->n_cpu; ++i) {
-		cs_trace_disable(devices.etm[i]);
-	}
+//	for (i = 0; i < board->n_cpu; ++i) {
+	i=0;
+	cs_trace_disable(devices.etm[i]);
+//	}
 
 	cs_sink_disable(devices.etf_a53);
 	cs_sink_disable(devices.etf_main);

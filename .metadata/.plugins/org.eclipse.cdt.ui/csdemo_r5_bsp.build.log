@@ -1,4 +1,4 @@
-10:40:22 **** Build of project csdemo_r5_bsp ****
+18:07:29 **** Build of project csdemo_r5_bsp ****
 make -k all 
 "Running Make include in psu_cortexr5_0/libsrc/axipmon_v6_5/src"
 C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s include  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
@@ -45,6 +45,7 @@ C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s i
 "Running Make libs in psu_cortexr5_0/libsrc/axipmon_v6_5/src"
 C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
 "Compiling axipmon"
+armr5-none-eabi-ar: creating ../../../lib/libxil.a
 "Running Make libs in psu_cortexr5_0/libsrc/canps_v3_2/src"
 C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5 -Wall -Wextra -mfloat-abi=hard -mfpu=vfpv3-d16"
 "Compiling canps"
@@ -114,5 +115,5 @@ C:/Xilinx/SDK/2017.2/gnuwin/bin/make -C psu_cortexr5_0/libsrc/zdma_v1_2/src -s l
 "Compiling zdma"
 'Finished building libraries'
 
-10:41:13 Build Finished (took 50s.223ms)
+18:08:14 Build Finished (took 45s.348ms)
 
