@@ -76,7 +76,7 @@ int cs_etf_enable(cs_device_t dev) {
 		   CS_ETB_FLFMT_CTRL_EnFCont: enable continuous formatting (ETB)
 		   or enable insertion of triggers (TMC)
 		*/
-		ffcr = 0x0; // disable formating.. does this work for TMC devices in HWFIFO mode????
+//		ffcr = 0x0; // disable formating.. does this work for TMC devices in HWFIFO mode????
 		ffcr = CS_ETB_FLFMT_CTRL_EnFTC | CS_ETB_FLFMT_CTRL_EnTI;  // EnFt: formatting is enabled (always in FIFO-Mode), ENTI: enable insertion of triggers in the formatted trace stream (ATID: 7'h7D, ATDATA: 8'h00)
 		if (d->v.etb.is_tmc_device) {
 			/* Stop on a Flush operation.  For a TMC ETB we don't want to go straight
@@ -166,6 +166,7 @@ int cs_sink_enable(cs_device_t dev)
            or enable insertion of triggers (TMC)
         */
         flfmt = CS_ETB_FLFMT_CTRL_EnFTC | CS_ETB_FLFMT_CTRL_EnTI;
+//        flfmt=0x0;
         if (d->v.etb.is_tmc_device) {
             /* Stop on a Flush operation.  For a TMC ETB we don't want to go straight
                from Running to Disabled, instead we want to Stop the ETB first,

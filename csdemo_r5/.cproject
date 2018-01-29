@@ -79,7 +79,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="source/csdemo_etm0_tpiu.c|source/cs_demo_known_boards_etm0_tpiu.c|source/cs_demo_known_boards_orig.c|source/csdemo_etm0_etf4k.c|source/csdemo2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="source/csdemo_etm0_etf4k.c|source/csdemo.c|source/csdemo_etm0_tpiu.c|source/cs_demo_known_boards_etm0_tpiu.c|source/cs_demo_known_boards_orig.c|source/csdemo2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -159,7 +159,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="source/csdemo_etm0_tpiu.c|source/cs_demo_known_boards_etm0_tpiu.c|source/cs_demo_known_boards_orig.c|source/csdemo_etm0_etf4k.c|source/csdemo2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="source/csdemo_etm0_etf4k.c|source/csdemo.c|source/csdemo_etm0_tpiu.c|source/cs_demo_known_boards_etm0_tpiu.c|source/cs_demo_known_boards_orig.c|source/csdemo2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

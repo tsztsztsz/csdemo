@@ -123,12 +123,18 @@ cs_atid_t cs_get_trace_source_id(cs_device_t dev)
     return id;
 }
 
+//#ifndef AUTO_PATH
+//#define AUTO_PATH
+//#endif
+
 int cs_trace_enable(cs_device_t dev)
 {
     int rc;
     struct cs_device *d = DEV(dev);
     assert(cs_device_has_class(dev, CS_DEVCLASS_SOURCE));
-    //_cs_path_enable(d, /*enabled= */ 1);
+#ifdef AUTO_PATH
+    _cs_path_enable(d, /*enabled= */ 1);
+#endif
     _cs_unlock(d);
     if (cs_device_has_class(dev, CS_DEVCLASS_CPU)) {
         /* Enable ETM/PTM trace */

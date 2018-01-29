@@ -67,23 +67,8 @@
 #include <assert.h>
 #include <stdbool.h>
 
-//#ifndef UNIX_USERSPACE
-//#define UNIX_USERSPACE 1
-//#endif				/* UNIX_USERSPACE */
 
-#if UNIX_USERSPACE
-#include <sys/types.h>
-#include <fcntl.h>
-//#include <sys/mman.h>
-#endif				/* UNIX_USERSPACE */
 
-/* Change these to capture the specific region of the kernel required
- KERNEL_TRACE_SIZE          is the extent of the region to trace
- KERNEL_TRACE_VIRTUAL_ADDR  is the virtual address of the start of the region to trace,
- i.e. corresponding to addresses in the vmlinux file
- */
-
-#define KERNEL_TRACE_SIZE 0x7000000//0x700000
 #define ALL_CPUS -1
 
 static struct cs_devices_t devices;
@@ -295,24 +280,24 @@ static int do_configure_trace(const struct board *board) {
 	/*
 	 * Setting Source ID for ETMs, Initialize ETMs (ViewInst, Sync, StartStop Range)
 	 */
-	for (i = 0; i < board->n_cpu; ++i) {
-		printf("CSDEMO: Configuring trace source id for CPU #%d ETM/PTM...\n", i);
-		devices.etm[i] = cs_cpu_get_device(i, CS_DEVCLASS_SOURCE);
-		if (devices.etm[i] == CS_ERRDESC) {
-			fprintf(stderr, "** Failed to get trace source for CPU #%d\n", i);
-			return -1;
-		}
-		if (cs_set_trace_source_id(devices.etm[i], 0x10 + i) < 0) {
-			return -1;
-		}
-		if (do_init_etm(devices.etm[i]) < 0) {
-			return -1;
-		}
+	i=0;
+	printf("CSDEMO: Configuring trace source id for CPU #%d ETM/PTM...\n", i);
+	devices.etm[i] = cs_cpu_get_device(i, CS_DEVCLASS_SOURCE);
+	if (devices.etm[i] == CS_ERRDESC) {
+		fprintf(stderr, "** Failed to get trace source for CPU #%d\n", i);
+		return -1;
 	}
-	if (itm) {
-		printf("CSDEMO: Configuring trace source id for STM #%d ETM/PTM...\n", i);
-		cs_set_trace_source_id(devices.itm, 0x20);
+//	if (cs_set_trace_source_id(devices.etm[i], 0x10 + i) < 0) {
+//		return -1;
+//	}
+	if (cs_set_trace_source_id(devices.etm[i], 0xD) < 0) {
+			return -1;
+		}
+	if (do_init_etm(devices.etm[i]) < 0) {
+		return -1;
 	}
+
+
 	/*
 	 * Configure ETMs (VMID, ContextID, Address Range Filter)
 	 */
@@ -324,12 +309,13 @@ static int do_configure_trace(const struct board *board) {
 	/*
 	 * Enable timestamps and cycle accurate tracing,
 	 */
-	for (i = 0; i < board->n_cpu; ++i) {
-		if (trace_timestamps)
-			cs_trace_enable_timestamps(devices.etm[i], 1);
-		if (trace_cycle_accurate)
-			cs_trace_enable_cycle_accurate(devices.etm[i], 1);
-	}
+	//for (i = 0; i < board->n_cpu; ++i) {
+	i=0;
+	if (trace_timestamps)
+		cs_trace_enable_timestamps(devices.etm[i], 1);
+	if (trace_cycle_accurate)
+		cs_trace_enable_cycle_accurate(devices.etm[i], 1);
+	//}
 	cs_checkpoint();
 	/*********************************************************/
 
@@ -424,17 +410,19 @@ int main(int argc, char **argv) {
 	full = false; 			 // false: enable address range filter, true: enable filtering
 	etb_stop_on_flush = 1;
 	etb_post_trig_words = 0;
-	trace_timestamps = false;
-	trace_cycle_accurate = false;
+	trace_timestamps = true;
+	trace_cycle_accurate = true;
 	return_stack = false;
 	cs_diag_set(1);
 	verbose = true;
 	pause_mode = 0;
 
 	if(!full) {
-		o_trace_start_address = 0x0000000000015a1c;
-		o_trace_end_address = 0x0000000000015b2c;
+		//function calculatePrimes();
+		o_trace_start_address = 0x000000000001030;
+		o_trace_end_address = 0x000000000001144;
 	}
+
 
 
 	const struct board *board;
@@ -495,9 +483,10 @@ int main(int argc, char **argv) {
 
 	printf("CSDEMO: Disable trace...\n");
 	/* now shut down all the sources */
-	for (i = 0; i < board->n_cpu; ++i) {
-		cs_trace_disable(devices.etm[i]);
-	}
+//	for (i = 0; i < board->n_cpu; ++i) {
+	i=0;
+	cs_trace_disable(devices.etm[i]);
+//	}
 
 	cs_sink_disable(devices.etf_a53);
 	cs_sink_disable(devices.etf_main);
@@ -511,12 +500,7 @@ int main(int argc, char **argv) {
 //	do_fetch_trace(&devices, itm);
 	fetch_trace_option();
 	do_fetch_trace_etb_uart(devices.etf_a53);
-//	printf("**************************************************\n");
-//	printf("CSDEMO: buffer contents after fetching trace data:\n");
-//	printf("CSDEMO: trace buffer contents in ETF4K (A53): %u bytes\n", cs_get_buffer_unread_bytes(devices.etf_a53));
-//	printf("CSDEMO: trace buffer contents in ETF8K (main): %u bytes\n", cs_get_buffer_unread_bytes(devices.etf_main));
-//	printf("**************************************************\n");
-//	printf("CSDEMO: shutdown...\n");
+
 	cs_shutdown();
 
     cleanup_platform();
