@@ -40,6 +40,11 @@ int cs_etf_disable(cs_device_t dev);
 int cs_sink_is_enabled(cs_device_t dev);
 
 /**
+   Enable ETR for storing trace data in system memory using AXI
+*/
+int cs_etr_axi_enable(cs_device_t dev);
+
+/**
    Enable a trace sink
 */
 int cs_sink_enable(cs_device_t dev);

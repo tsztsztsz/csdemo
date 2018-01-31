@@ -194,7 +194,7 @@ static int do_init_etm(cs_device_t dev) {
 	v4config.eventctlr1r = 0;
 	/* config */
 	v4config.stallcrlr = 0; /* no stall */
-	v4config.syncpr = 0xC; /* sync 0c9=512 bytes; 0xC=4096 bytes */
+	v4config.syncpr = 0xB; /* sync 0x9=512 bytes; 0xC=4096 bytes */
 	cs_etm_config_put_ex(dev, &v4config);
 
 	return 0;
@@ -253,7 +253,7 @@ static int do_config_etmv4(int n_core) {
 
 		/* finally, set up ViewInst to trace according to the resources we have set up */
 		tconfig.viiectlr = 0x1; /* program the address comp pair 0 for include */
-		tconfig.syncpr = 0xC; /* no extra sync */
+		tconfig.syncpr = 0xB; /* sync every 2^11 byte packets */
 
 	}
 	cs_etm_config_print_ex(etm, &tconfig);

@@ -577,7 +577,8 @@ programmable replicator and TMC trace devices.
 #define CS_TPIU_CUR_TEST_PAT_MODE 0x204 /* TPIU Current Test Pattern Mode*/
 #define CS_TPIU_ALL_PATTERN_TIME 0x1000F /* TPIU all patterns, timed mode*/
 #define CS_TPIU_ALL_PATTERN_CONT 0x2000F /* TPIU all patterns, continuous mode*/
-#define CS_TPIU_TPRCR 0x208 /* TPIU */
+#define CS_TPIU_TPRCR 0x208 /* TPIU  number of cycles for each test pattern */
+#define CS_TPIU_FSCR 0x308 /* TPIU Formatter Synchronization Count Register, default: 0x4 = 0d64 --> full sync packet every 64 frames = 1024 Bytes   */
 
 /**@}*/
 
@@ -609,6 +610,8 @@ ETB: [CoreSight SoC TRM 3.10] - n.b. the register names there are more cryptic
 #define CS_ETB_RAM_WRITE_DATA 0x024	/**< ETB RAM Write Data Register */
 #define CS_ETB_FLFMT_STATUS  0x300	/**< ETB Formatter and Flush Status Register */
 #define CS_ETB_FLFMT_CTRL    0x304     /**< ETB Formatter and Flush Control Register */
+#define CS_ETB_PSCR	0x308			   /**< ETB Periodic Synchronization Register */
+
 /**@}*/
 
 /** @name ETB FFCR bitfields
@@ -661,6 +664,12 @@ TMC specific registers - see ETB definitions for common register set between ETB
 #define CS_TMC_CONFIG_TYPE_ETR  1   /**< TMC ETR configuration - external bus master. */
 #define CS_TMC_CONFIG_TYPE_ETF  2   /**< TMC ETF configuration - internal buffer and ATB output. */
 
+/* AXICTL bitfields */
+#define CS_TMC_AXICTL_WRBURSTLEN2 0x100 /* max. of 2  data transfers per burst.*/
+#define CS_TMC_AXICTL_WRBURSTLEN16 0xF00 /* max. of 16 data transfers per burst.*/
+#define CS_TMC_AXICTL_WRBURSTLEN128 0x7F00 /* max. of 218 data transfers per burst.*/
+#define CS_TMC_SCATGAT_MODE 0x80 /* scatter gather mode bit*/
+#define CS_TMX_AXICTL_CACHEPROT 0x3F /* cache and protection bits all set to 1 (0b111111) --> cache enabled, non-secure access, privileged access
 /**@}*/
 
 /** @name CoreSight Trace Funnel registers */

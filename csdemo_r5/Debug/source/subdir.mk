@@ -24,7 +24,7 @@ C_SRCS += \
 ../source/cs_trace_source.c \
 ../source/cs_ts_gen.c \
 ../source/cs_util_create_snapshot.c \
-../source/csdemo_etm0_etf8k.c \
+../source/csdemo_etm0_etr.c \
 ../source/csregistration.c \
 ../source/getline.c \
 ../source/platform.c \
@@ -48,7 +48,7 @@ OBJS += \
 ./source/cs_trace_source.o \
 ./source/cs_ts_gen.o \
 ./source/cs_util_create_snapshot.o \
-./source/csdemo_etm0_etf8k.o \
+./source/csdemo_etm0_etr.o \
 ./source/csregistration.o \
 ./source/getline.o \
 ./source/platform.o \
@@ -72,7 +72,7 @@ C_DEPS += \
 ./source/cs_trace_source.d \
 ./source/cs_ts_gen.d \
 ./source/cs_util_create_snapshot.d \
-./source/csdemo_etm0_etf8k.d \
+./source/csdemo_etm0_etr.d \
 ./source/csregistration.d \
 ./source/getline.d \
 ./source/platform.d \

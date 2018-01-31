@@ -333,10 +333,18 @@ static int do_configure_trace(const struct board *board) {
 	/* CORESIGHT SINKS - Enable ETFs and TPIU*/
 	/*********************************************************/
 	/*
+	 *  Enable ETR device for use in Circular Buffer mode
+	 */
+	printf("CSDEMO: Enabling AXI Interface of ETR...\n");
+	if (cs_etr_axi_enable(devices.etr) != 0) {
+		printf("CSDEMO: Could not enable AXI Interface of ETR - not running demo\n");
+		return -1;
+	}
+	/*
 	 *  Enable ETF-main device for use in HW FIFO Mode
 	 */
-	printf("CSDEMO: Enabling ETF-Main in Circular Buffer mode...\n");
-	if (cs_sink_enable(devices.etf_main) != 0) {
+	printf("CSDEMO: Enabling ETF-Main in HW FIFO mode...\n");
+	if (cs_etf_enable(devices.etf_main) != 0) {
 		printf("CSDEMO: Could not enable trace buffer - not running demo\n");
 		return -1;
 	}
@@ -507,6 +515,12 @@ int main(int argc, char **argv) {
 	/*****************************************************************/
 
 	/*****************************************************************/
+	/* Initialize trace buffer in system memory */
+	/*****************************************************************/
+	memset((char *) 0x60000000, 0, 0x20000000);
+	/*****************************************************************/
+
+	/*****************************************************************/
 	/* Configuration of all CoreSight Devices */
 	/*****************************************************************/
 	/* Enable Slave Ports of Funnel Devices */
@@ -551,20 +565,20 @@ int main(int argc, char **argv) {
 
 	cs_sink_disable(devices.etf_a53);
 	cs_sink_disable(devices.etf_main);
-	cs_sink_disable(devices.tpiu);
+	cs_sink_disable(devices.etr);
 	pause_demo();
 
 
 	printf("**************************************************\n");
 	printf("CSDEMO: buffer contents after trace application:\n");
-	printf("CSDEMO: buffer has wrapped: %i\n", cs_buffer_has_wrapped(devices.etf_main));
-	printf("CSDEMO: trace buffer contents in ETF8K (main): %u bytes\n", cs_get_buffer_unread_bytes(devices.etf_main));
+	printf("CSDEMO: buffer has wrapped: %i\n", cs_buffer_has_wrapped(devices.etr));
+	printf("CSDEMO: trace buffer contents in ETR: %u bytes\n", cs_get_buffer_unread_bytes(devices.etr));
 	printf("**************************************************\n");
 	/*
 	 * Enable fetch of trace data (Output via UART)
 	 */
 	fetch_trace_option();
-	do_fetch_trace_etb_uart(devices.etf_main);
+	do_fetch_trace_etb_uart(devices.etr);
 
 	cs_shutdown();
 
